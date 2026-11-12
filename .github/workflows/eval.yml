@@ -21,6 +21,11 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Unit tests
         run: python -m pytest -q tests
+      - name: Cache source PDFs
+        uses: actions/cache@v4
+        with:
+          path: data/raw
+          key: sds-pdfs-${{ hashFiles('data/manifest.csv') }}
       - name: Fetch source documents
         run: python scripts/download.py && python scripts/extract_text.py
       - name: Eval (replayed responses, quality gate)

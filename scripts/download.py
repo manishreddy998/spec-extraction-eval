@@ -27,8 +27,16 @@ def main() -> None:
             ok += 1
             continue
         try:
-            resp = requests.get(row["url"], headers=HEADERS, timeout=30)
-            resp.raise_for_status()
+            resp = None
+            for attempt in range(3):  # publisher sites are flaky; retry with backoff
+                try:
+                    resp = requests.get(row["url"], headers=HEADERS, timeout=30)
+                    resp.raise_for_status()
+                    break
+                except requests.RequestException:
+                    if attempt == 2:
+                        raise
+                    time.sleep(2 ** (attempt + 1))
             if not resp.content.startswith(b"%PDF"):
                 print(f"skip {row['doc_id']}: not a PDF")
                 continue
@@ -39,6 +47,8 @@ def main() -> None:
             print(f"fail {row['doc_id']}: {exc}")
         time.sleep(0.5)  # be polite to the hosts
     print(f"{ok}/{len(rows)} documents available in {RAW}")
+    if ok < len(rows):
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":
