@@ -57,15 +57,22 @@ class CallResult:
     error: Optional[str] = None
 
 
-def extract(document: str, schema: Type[T], instructions: str) -> CallResult:
+# models with a server-side refusal fallback; Haiku has none, so the parameter is left off there
+FALLBACK_MODELS = {"claude-opus-5-5", "claude-sonnet-5-5"}
+
+
+def extract(document: str, schema: Type[T], instructions: str, model: str = MODEL) -> CallResult:
     """One schema-constrained extraction call. The response is validated against `schema`."""
     start = time.perf_counter()
+    extra = {}
+    if model in FALLBACK_MODELS:
+        # if a safety classifier declines, the API retries on a fallback model inside the same call
+        extra = {"betas": ["server-side-fallback-2026-07-01"], "fallbacks": "default"}
     try:
         resp = client().beta.messages.parse(
-            model=MODEL,
+            model=model,
             max_tokens=16000,
-            betas=["server-side-fallback-2026-07-01"],
-            fallbacks="default",  # if a safety classifier declines, retry on a fallback model
+            **extra,
             output_config={"effort": EFFORT},
             system=SYSTEM,
             messages=[{
@@ -75,10 +82,10 @@ def extract(document: str, schema: Type[T], instructions: str) -> CallResult:
             output_format=schema,
         )
     except anthropic.APIStatusError as exc:
-        return CallResult(None, 0, 0, 0.0, time.perf_counter() - start, MODEL, f"api_error {exc.status_code}")
+        return CallResult(None, 0, 0, 0.0, time.perf_counter() - start, model, f"api_error {exc.status_code}")
     latency = time.perf_counter() - start
     usage = resp.usage
-    price_in, price_out = PRICES.get(resp.model, PRICES[MODEL])
+    price_in, price_out = PRICES.get(resp.model, PRICES[model])
     cost = usage.input_tokens * price_in / 1e6 + usage.output_tokens * price_out / 1e6
     if resp.stop_reason == "refusal":
         return CallResult(None, usage.input_tokens, usage.output_tokens, cost, latency, resp.model, "refusal")
