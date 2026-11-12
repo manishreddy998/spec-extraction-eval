@@ -16,9 +16,14 @@ from .sections import first_page, section
 MISSING = object()
 
 CAS_RE = re.compile(r"\b(\d{2,7})-(\d{2})-(\d)\b")
-CAS_LIKE_RE = re.compile(r"\b[\dBOlI]{2,7}-[\dBOlI]{2}-[\dBOlI]\b")
+# characters that broken font maps and OCR substitute for digits; a "lookalike" token that matches
+# only when these are allowed means the strict pattern is silently missing something
+LOOKALIKE = r"[\dBOlISs]"
+CAS_LIKE_RE = re.compile(rf"\b{LOOKALIKE}{{2,7}}-{LOOKALIKE}{{2}}-{LOOKALIKE}\b")
 H_RE = re.compile(r"\bH(\d{3})\b")
+H_LIKE_RE = re.compile(rf"\b[HE]{LOOKALIKE}{{3}}\b")
 UN_RE = re.compile(r"\bUN\s?(\d{4})\b")
+UN_LIKE_RE = re.compile(rf"\bU[NM]\s?{LOOKALIKE}{{4}}\b")
 NA_RE = re.compile(r"not applicable|not available|no data|\bn\.?\s?a\.?\b|\bn\.d\.?|none|does not flash|sans objet", re.I)
 
 
@@ -31,7 +36,7 @@ def cas_checksum_ok(cas: str) -> bool:
 
 
 def cas_numbers(text: str) -> Any:
-    sec = section(text, 3)
+    sec = section(text, 3, strict=True)
     if not sec:
         return MISSING
     found = ["-".join(m.groups()) for m in CAS_RE.finditer(sec)]
@@ -43,10 +48,13 @@ def cas_numbers(text: str) -> Any:
 
 
 def hazard_statements(text: str) -> Any:
-    sec = section(text, 2)
+    sec = section(text, 2, strict=True)
     if not sec:
         return MISSING
-    return sorted({f"H{c}" for c in H_RE.findall(sec)})  # empty list is a valid answer here
+    codes = H_RE.findall(sec)
+    if len(H_LIKE_RE.findall(sec)) > len(codes):  # e.g. "H3l9" or "E319": some codes are unreadable
+        return MISSING
+    return sorted({f"H{c}" for c in codes})  # empty list is a valid answer here
 
 
 def signal_word(text: str) -> Any:
@@ -59,10 +67,12 @@ def signal_word(text: str) -> Any:
 
 
 def un_number(text: str) -> Any:
-    sec = section(text, 14)
+    sec = section(text, 14, strict=True)
     if not sec:
         return MISSING
     codes = UN_RE.findall(sec)
+    if len(UN_LIKE_RE.findall(sec)) > len(codes):
+        return MISSING
     for line in re.findall(r"UN\s*(?:number|no\.?)\s*:?\s*([^\n]*)", sec, re.I):
         codes += re.findall(r"(?<![\d.])(\d{4})(?![\d.])", line)  # tables like "UN Number: N.A. 1950 1950"
     if codes:
@@ -78,12 +88,14 @@ def _starts_na(win: str) -> bool:
 
 
 def _corrupted(win: str) -> bool:
-    """Digits glued to capital letters ('-1B.8') signal a broken font map in the PDF."""
-    return bool(re.search(r"\d[ABD-EG-Z]\b|\b[A-Z]\d|\d[A-Z]\d", win))  # C and F after a digit are units
+    """Digits glued to letters ('-1B.8', '4S', '2O21') signal a broken font map or OCR errors."""
+    return bool(re.search(r"\d[ABD-EG-Z]\b|\b[A-Z]\d|\d[A-Z]\d|\d[lOSBI]|[lOSBI]\d", win))  # C, F = units
 
 
 def _value_window(text: str, label: str) -> str | None:
     """The rest of the line after `label`, plus the next line (values often wrap)."""
+    if not text:
+        return None  # section not found: don't search the rest of the document
     m = re.search(label + r"(.*)\n?(.*)", text, re.I)
     if not m:
         return None
@@ -92,7 +104,7 @@ def _value_window(text: str, label: str) -> str | None:
 
 
 def flash_point_c(text: str) -> Any:
-    win = _value_window(section(text, 9) or text, r"flash\s*point")
+    win = _value_window(section(text, 9, strict=True), r"flash\s*point")
     if win is None:
         return MISSING
     if _starts_na(win):
@@ -111,11 +123,13 @@ def flash_point_c(text: str) -> Any:
 
 
 def ph(text: str) -> Any:
-    win = _value_window(section(text, 9) or text, r"\bpH\b")
+    win = _value_window(section(text, 9, strict=True), r"\bpH\b")
     if win is None:
         return MISSING
     if _starts_na(win):
         return None
+    if _corrupted(win):
+        return MISSING
     m = re.match(r"\s*[:.]?\s*(\d{1,2}(?:\.\d+)?)(?!\s*%)(?![\d.])", win)  # the value must come first
     if m and 0 <= float(m.group(1)) <= 14:
         return float(m.group(1))
@@ -123,7 +137,7 @@ def ph(text: str) -> Any:
 
 
 def physical_state(text: str) -> Any:
-    m = re.search(r"physical\s*state\s*[:\-]?\s*(liquid|solid|gas)\b", section(text, 9) or text, re.I)
+    m = re.search(r"physical\s*state\s*[:\-]?\s*(liquid|solid|gas)\b", section(text, 9, strict=True), re.I)
     return m.group(1).lower() if m else MISSING
 
 

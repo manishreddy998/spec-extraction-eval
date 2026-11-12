@@ -25,13 +25,19 @@ def _heading(n: int) -> re.Pattern:
     return re.compile(rf"(?im)^\s*(section\s*)?{n}\s*[\.:)\-]?\s*(\d+\.\s*)?({HEADINGS[n]})")
 
 
-def section(text: str, n: int, fallback_chars: int = 8000) -> str:
-    """Return the text of GHS section n, or '' when its heading can't be found."""
+def section(text: str, n: int, fallback_chars: int = 8000, strict: bool = False) -> str:
+    """Return the text of GHS section n, or '' when its heading can't be found.
+
+    With strict=True the next section's heading must be found too; otherwise we can't tell where
+    this section ends (corrupted headings), and a rule reading past the end would trust the wrong text.
+    """
     start = _heading(n).search(text)
     if not start:
         return ""
     nxt = _NEXT.get(n)
     end = _heading(nxt).search(text, start.end()) if nxt else None
+    if strict and nxt and not end:
+        return ""
     stop = end.start() if end else start.start() + fallback_chars
     return text[start.start(): stop]
 
