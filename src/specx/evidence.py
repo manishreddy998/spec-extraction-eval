@@ -1,10 +1,11 @@
 """Checks that decide whether an extracted value can be trusted without a human.
 
-Four independent checks, all deterministic and free:
-1. grounding    - the quoted evidence really exists in the source text
-2. consistency  - the value can be read out of its own quote
-3. validity     - the value obeys the domain's rules (CAS check digit, GHS code range, sane dates...)
-4. clean source - the quote has no corrupted characters the model would have had to guess through
+Five independent checks, all deterministic and free:
+1. grounding     - the quoted evidence really exists in the source text
+2. consistency   - the value can be read out of its own quote
+3. validity      - the value obeys the domain's rules (CAS check digit, GHS code range, sane dates...)
+4. clean source  - the quote has no corrupted characters the model would have had to guess through
+5. honest nulls  - a "not stated" answer is rejected when its own quote states a value
 
 A value that fails any check is escalated to a stronger model; if that fails too, it is flagged
 for review instead of being silently trusted.
@@ -63,6 +64,24 @@ def value_in_quote(field: str, value: Any, quote: str) -> bool:
     return bool(words) and len(words & set(re.findall(r"[a-z0-9]+", q))) / len(words) >= 0.6
 
 
+def null_contradicted(field: str, value: Any, quote: str) -> bool:
+    """A 'not stated' answer whose own evidence states something."""
+    if value not in (None, []) or not quote:
+        return False
+    q = _squash(quote)
+    if field == "physical_state":
+        return bool(re.search(r"\b(liquid|solid|gas)\b", q))
+    if field == "signal_word":
+        return bool(re.search(r"\b(danger|warning)\b", q))
+    if field == "un_number":
+        return bool(re.search(r"\bun\s?\d{4}\b", q))
+    if field == "flash_point_c":
+        return bool(re.search(r"-?\d+(\.\d+)?\s*°?\s*[cf]\b", q)) and "not" not in q
+    if field == "cas_numbers":
+        return bool(re.search(r"\b\d{2,7}-\d{2}-\d\b", q))
+    return False
+
+
 def value_valid(field: str, value: Any) -> bool:
     if value is None or value == []:
         return True
@@ -94,6 +113,8 @@ def check(field: str, value: Any, quote: str, source: str) -> list[str]:
         failed.append("value_not_in_quote")
     if not value_valid(field, value):
         failed.append("invalid_value")
+    if null_contradicted(field, value, quote):
+        failed.append("null_but_quote_has_value")
     numeric = field in ("cas_numbers", "un_number", "flash_point_c", "ph", "revision_date")
     if numeric and value not in (None, []) and _corrupted(quote):
         failed.append("corrupted_source_text")  # e.g. "-1B.8": the model had to guess what it says

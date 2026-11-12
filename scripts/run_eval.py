@@ -1,9 +1,8 @@
 """Run one or both extraction methods over every document and score them against the golden set.
 
 Usage:
-    python scripts/run_eval.py --method single
-    python scripts/run_eval.py --method staged
-    python scripts/run_eval.py --method both
+    python scripts/run_eval.py                 # all methods
+    python scripts/run_eval.py --method C_cascade
 
 Writes per-document predictions to runs/<method>.jsonl, loads everything into DuckDB
 (results/eval.duckdb) and writes a summary table to results/summary.md.
@@ -25,12 +24,27 @@ from specx.llm import EFFORT, MODEL  # noqa: E402
 from specx.schema import FIELDS  # noqa: E402
 from specx.score import score_record  # noqa: E402
 
-METHODS = {"single": extract_single.run}
-try:  # the staged method is added in a later step
-    from specx import extract_staged  # noqa: E402
-    METHODS["staged"] = extract_staged.run
-except ImportError:
-    pass
+from specx import extract_cascade  # noqa: E402
+
+
+def _single(model: str):
+    def fn(text: str):
+        record, calls = extract_single.run(text, model=model)
+        return record, calls, {}  # no verification: every value is trusted as-is
+    return fn
+
+
+def _cascade(text: str):
+    record, trace, calls = extract_cascade.run_detailed(text)
+    return record, calls, trace
+
+
+# A: big model, whole document.  B: small model, whole document.  C: verified cascade.
+METHODS = {
+    "A_opus_single": _single(MODEL),
+    "B_haiku_single": _single(extract_cascade.SMALL_MODEL),
+    "C_cascade": _cascade,
+}
 
 TEXT = ROOT / "data" / "text"
 RUNS = ROOT / "runs"
@@ -48,12 +62,17 @@ def run_method(name: str, golden: dict[str, dict], workers: int) -> list[dict]:
     def one(doc_id: str) -> dict:
         text = (TEXT / f"{doc_id}.txt").read_text()
         t0 = time.perf_counter()
-        record, calls = fn(text)
+        record, calls, trace = fn(text)
+        scores = score_record(record, golden[doc_id])
+        review = [f for f, t in trace.items() if t.get("stage") == "review"]
         return {
             "method": name,
             "doc_id": doc_id,
             "prediction": record,
-            "scores": score_record(record, golden[doc_id]),
+            "trace": trace,
+            "scores": scores,
+            "review": review,
+            "silent_errors": [f for f in FIELDS if not scores[f] and f not in review],
             "llm_calls": len(calls),
             "input_tokens": sum(c.input_tokens for c in calls),
             "output_tokens": sum(c.output_tokens for c in calls),
@@ -91,6 +110,8 @@ def summarize(all_rows: dict[str, list[dict]]) -> str:
 
     extra = [
         ("**All fields**", lambda rows: f"**{sum(sum(r['scores'][f] for f in FIELDS) for r in rows) / (len(rows) * len(FIELDS)):.1%}**"),
+        ("Silent errors (wrong and not flagged)", lambda rows: f"**{sum(len(r['silent_errors']) for r in rows)}**"),
+        ("Values flagged for review", lambda rows: str(sum(len(r['review']) for r in rows))),
         ("CAS set F1 (mean)", lambda rows: f"{sum(r['scores']['cas_f1'] for r in rows) / len(rows):.3f}"),
         ("LLM calls", lambda rows: str(sum(r["llm_calls"] for r in rows))),
         ("Input tokens", lambda rows: f"{sum(r['input_tokens'] for r in rows):,}"),
@@ -124,15 +145,19 @@ def to_duckdb(all_rows: dict[str, list[dict]]) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--method", choices=["single", "staged", "both"], default="both")
+    ap.add_argument("--method", choices=[*METHODS, "all"], default="all")
     ap.add_argument("--workers", type=int, default=4)
     args = ap.parse_args()
-    names = list(METHODS) if args.method == "both" else [args.method]
+    names = list(METHODS) if args.method == "all" else [args.method]
     golden = load_golden()
     all_rows = {}
     for n in names:
         print(f"running {n} on {len(golden)} documents ...")
         all_rows[n] = run_method(n, golden, args.workers)
+    errors = [(n, r["doc_id"], e) for n, rows in all_rows.items() for r in rows for e in r["errors"]]
+    if errors:
+        print(f"{len(errors)} LLM calls failed, results not saved. First: {errors[0]}")
+        sys.exit(1)
     summary = summarize(all_rows)
     RESULTS.mkdir(exist_ok=True)
     (RESULTS / "summary.md").write_text(summary)
@@ -141,6 +166,7 @@ def main() -> None:
     for n, rows in all_rows.items():
         misses = [(r["doc_id"], f) for r in rows for f in FIELDS if not r["scores"][f]]
         print(f"{n} misses ({len(misses)}):", ", ".join(f"{d}:{f}" for d, f in misses))
+        print(f"{n} flagged:", ", ".join(f"{r['doc_id']}:{f}" for r in rows for f in r["review"]) or "none")
 
 
 if __name__ == "__main__":
