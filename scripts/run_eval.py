@@ -61,7 +61,6 @@ def run_method(name: str, golden: dict[str, dict], workers: int) -> list[dict]:
 
     def one(doc_id: str) -> dict:
         text = (TEXT / f"{doc_id}.txt").read_text()
-        t0 = time.perf_counter()
         record, calls, trace = fn(text)
         scores = score_record(record, golden[doc_id])
         review = [f for f, t in trace.items() if t.get("stage") == "review"]
@@ -77,7 +76,8 @@ def run_method(name: str, golden: dict[str, dict], workers: int) -> list[dict]:
             "input_tokens": sum(c.input_tokens for c in calls),
             "output_tokens": sum(c.output_tokens for c in calls),
             "cost_usd": sum(c.cost_usd for c in calls),
-            "latency_s": time.perf_counter() - t0,
+            # model time from each call's recorded latency, so replayed runs report the real numbers
+            "latency_s": sum(c.latency_s for c in calls),
             "errors": [c.error for c in calls if c.error],
         }
 

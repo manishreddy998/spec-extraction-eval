@@ -21,4 +21,4 @@ Model: `claude-opus-5-5` (effort `low`), 25 documents.
 | Output tokens | 4,897 | 13,759 | 6,203 |
 | Total cost (USD) | $1.436 | $0.040 | $0.059 |
 | Cost per document | $0.0575 | $0.0016 | $0.0024 |
-| Median latency per document | 0.0s | 0.0s | 0.0s |
+| Median latency per document | 2.7s | 2.9s | 1.7s |
