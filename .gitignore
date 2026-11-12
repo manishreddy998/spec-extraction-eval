@@ -1,0 +1,22 @@
+# secrets
+.env
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# downloaded source documents (not redistributed; see data/manifest.csv)
+data/raw/
+data/text/
+
+# local outputs
+*.duckdb
+*.duckdb.wal
+runs/*.jsonl
+
+# editors / os
+.DS_Store
+.vscode/
+.idea/
