@@ -1,0 +1,13 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 2122,
+ "output_tokens": 47,
+ "cost_usd": 0.009428,
+ "latency_s": 1.907492624995939,
+ "output": {
+  "flash_point_c": {
+   "value": 100.0,
+   "quote": "Flash poimt > 1O0 \u00b0C (> 212 \u00b0F)"
+  }
+ }
+}

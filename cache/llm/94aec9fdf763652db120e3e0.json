@@ -1,0 +1,45 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 4295,
+ "output_tokens": 338,
+ "cost_usd": 0.0005985,
+ "latency_s": 1.6805024170025717,
+ "output": {
+  "product_name": {
+   "value": "Tremclad Rust Paint",
+   "quote": "Name on Label: Tremclad Rust Paimt"
+  },
+  "manufacturer": {
+   "value": "Rust-Oleum Canada (ROCA)",
+   "quote": "Manufacturer: Rust-Oleum Canada (ROCA)"
+  },
+  "cas_numbers": {
+   "value": [
+    "64742-47-8",
+    "2786-76-7",
+    "1309-37-1",
+    "22464-99-9",
+    "96-29-7",
+    "110-43-0",
+    "2530-83-8",
+    "64742-95-6",
+    "136-52-7",
+    "41556-26-7",
+    "95-63-6",
+    "100-41-4",
+    "7631-86-9",
+    "64742-48-9",
+    "6B46-5O-0"
+   ],
+   "quote": "Hydrotreated Light Distillate 64742-47-8 1S-40 GHS08 H304"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Liquid Dccomposition Temperature, \u00b0CPhysical State N.D."
+  },
+  "ph": {
+   "value": null,
+   "quote": "pHColor Red N.A."
+  }
+ }
+}

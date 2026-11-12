@@ -1,0 +1,23 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 16310,
+ "output_tokens": 860,
+ "cost_usd": 0.002061,
+ "latency_s": 4.000391958004911,
+ "output": {
+  "product_name": "WD-40 Specialist\u00ae Dry Lubc",
+  "manufacturer": "WD-40 Products [Canada] Ltd.",
+  "cas_numbers": [
+   "64742-49-0",
+   "142-82-5",
+   "74-98-6"
+  ],
+  "signal_word": "Danger",
+  "hazard_statements": [],
+  "un_number": "UN1950",
+  "flash_point_c": -34.0,
+  "physical_state": "liquid",
+  "ph": null,
+  "revision_date": "2024-09-04"
+ }
+}

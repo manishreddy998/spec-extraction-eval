@@ -1,0 +1,13 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 5866,
+ "output_tokens": 56,
+ "cost_usd": 0.024583999999999998,
+ "latency_s": 1.915919249993749,
+ "output": {
+  "revision_date": {
+   "value": "2021-08-02",
+   "quote": "Revision Datc: August 2, 202l Supersedes: April 29, 2O20"
+  }
+ }
+}

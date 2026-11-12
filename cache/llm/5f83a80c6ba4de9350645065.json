@@ -1,0 +1,41 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 9684,
+ "output_tokens": 979,
+ "cost_usd": 0.0014579000000000003,
+ "latency_s": 4.360312000004342,
+ "output": {
+  "product_name": "Painter's Touch Ultra Cover 2X Spray",
+  "manufacturer": "Rust-Oleum Canada (ROCA)",
+  "cas_numbers": [
+   "67-64-1",
+   "74-98-6",
+   "13463-67-7",
+   "106-97-8",
+   "64742-49-0",
+   "1330-20-7",
+   "14807-96-6",
+   "123-86-4",
+   "64742-47-8",
+   "100-41-4",
+   "142-82-5",
+   "111-65-9",
+   "22464-99-9"
+  ],
+  "signal_word": "Danger",
+  "hazard_statements": [
+   "H222",
+   "H229",
+   "H319",
+   "H336",
+   "H351",
+   "H360",
+   "H373"
+  ],
+  "un_number": "UN1950",
+  "flash_point_c": -96.0,
+  "physical_state": null,
+  "ph": null,
+  "revision_date": "2025-04-07"
+ }
+}

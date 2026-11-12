@@ -1,0 +1,30 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 2415,
+ "output_tokens": 175,
+ "cost_usd": 0.01316,
+ "latency_s": 3.0620192080023116,
+ "output": {
+  "cas_numbers": {
+   "value": [
+    "67-64-1",
+    "74-98-6",
+    "64742-47-8",
+    "64742-49-0",
+    "106-97-8",
+    "14807-96-6",
+    "13463-67-7",
+    "1309-37-1",
+    "1330-20-7",
+    "100-41-4",
+    "96-29-7",
+    "123-86-4"
+   ],
+   "quote": "Hydrotreatcd Light Distillate 64B42-47-8 10-30 GES08 H304"
+  },
+  "revision_date": {
+   "value": "2026-01-30",
+   "quote": "Revision Date: 1/30/2O26"
+  }
+ }
+}

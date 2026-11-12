@@ -1,0 +1,33 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 26789,
+ "output_tokens": 941,
+ "cost_usd": 0.0031494,
+ "latency_s": 7.968902375003381,
+ "output": {
+  "product_name": {
+   "value": "PURELL\u00ae Advanced Hand Sanitizer Gel",
+   "quote": "PURELL\u00ae Advanced Hand Sanitizer Gel"
+  },
+  "manufacturer": {
+   "value": "GOJO Industries, Inc.",
+   "quote": "Company name of supplier : GOJO Industries, Inc."
+  },
+  "signal_word": {
+   "value": "Warning",
+   "quote": "Sigmal word : Warning"
+  },
+  "un_number": {
+   "value": "UN1987",
+   "quote": "UN/ID No. : UN 1987"
+  },
+  "flash_point_c": {
+   "value": 25.0,
+   "quote": "Flash poimt : 25.00 \u00b0C"
+  },
+  "physical_state": {
+   "value": null,
+   "quote": "Appearance : gel"
+  }
+ }
+}

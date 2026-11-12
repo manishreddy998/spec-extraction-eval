@@ -1,0 +1,24 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 14426,
+ "output_tokens": 155,
+ "cost_usd": 0.060804,
+ "latency_s": 3.614908875002584,
+ "output": {
+  "cas_numbers": {
+   "value": [
+    "67-64-1",
+    "79-20-9",
+    "124-38-9",
+    "64742-49-0",
+    "426260-76-6",
+    "142-82-5"
+   ],
+   "quote": "acetone 6B-64-1 40 - S0 \nmethyl acetate B9-2O-9 30 - 4O \ncarbon dioxide 124-38-9 5 - 10"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Physical state Liqvid."
+  }
+ }
+}

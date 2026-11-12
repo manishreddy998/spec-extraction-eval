@@ -1,0 +1,42 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 10478,
+ "output_tokens": 335,
+ "cost_usd": 0.0012152999999999999,
+ "latency_s": 3.0617679999995744,
+ "output": {
+  "product_name": {
+   "value": "Rust-Oleum Chalked Ultra Matte Paint",
+   "quote": "Name on Label: Rust-Oleum Chalked Ultra Matte Paint"
+  },
+  "manufacturer": {
+   "value": "Rust-Oleum Corporation",
+   "quote": "Manufacturer: Rust-Olevm Corporation"
+  },
+  "cas_numbers": {
+   "value": [
+    "67-64-1",
+    "74-98-6",
+    "64742-47-8",
+    "64742-49-0",
+    "106-97-8",
+    "14807-96-6",
+    "13463-67-7",
+    "1309-37-1",
+    "1330-20-7",
+    "100-41-4",
+    "96-29-7",
+    "123-86-4"
+   ],
+   "quote": "Acetone 67-64-1 10-30 GHS02-GHS07 H225-3l9-332-336"
+  },
+  "un_number": {
+   "value": "UN1950",
+   "quote": "UN Nvmber: N.A. 1950 1950 1950"
+  },
+  "revision_date": {
+   "value": "2026-01-30",
+   "quote": "Revision Date: 1/30/2O26"
+  }
+ }
+}

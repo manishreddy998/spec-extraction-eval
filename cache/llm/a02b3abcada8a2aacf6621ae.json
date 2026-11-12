@@ -1,0 +1,29 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 3448,
+ "output_tokens": 133,
+ "cost_usd": 0.016452,
+ "latency_s": 2.394794959000137,
+ "output": {
+  "manufacturer": {
+   "value": "Henkel Ltd",
+   "quote": "Hemkel Ltd"
+  },
+  "cas_numbers": {
+   "value": [
+    "80-15-9",
+    "613-48-9",
+    "13463-67-7",
+    "130-15-4"
+   ],
+   "quote": "80-15-9"
+  },
+  "hazard_statements": {
+   "value": [
+    "H319",
+    "H335"
+   ],
+   "quote": "H319 Causes serious eye irritatiom."
+  }
+ }
+}

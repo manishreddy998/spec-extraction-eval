@@ -1,0 +1,44 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3823,
+ "output_tokens": 1289,
+ "cost_usd": 0.0010268,
+ "latency_s": 5.677561374999641,
+ "output": {
+  "product_name": {
+   "value": "ZEP ZEPTEEN SOLVENT DEGREASER",
+   "quote": ": ZEP ZEPTEEN SOLVENT DEGREASER"
+  },
+  "manufacturer": {
+   "value": "Zep Inc.",
+   "quote": "Company : Zep Inc."
+  },
+  "cas_numbers": {
+   "value": [
+    "95-63-6",
+    "64742-81-0",
+    "6B5S1-12-2",
+    "112-80-1",
+    "620-14-4",
+    "68439-46-3",
+    "108-67-8",
+    "622-96-8",
+    "526-73-8",
+    "103-65-1",
+    "611-14-3",
+    "1330-20-7",
+    "98-82-8",
+    "100-41-4"
+   ],
+   "quote": "1,2,4-trimethylbcnzene 95-63-6 >= 10 - < 20"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearancc : liquid"
+  },
+  "revision_date": {
+   "value": "2023-10-01",
+   "quote": "Version 4.1 Revisiom Date 10/01/2023 Print Date 02/08/2025"
+  }
+ }
+}

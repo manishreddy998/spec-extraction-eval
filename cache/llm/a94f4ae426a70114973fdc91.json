@@ -1,0 +1,29 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 16607,
+ "output_tokens": 844,
+ "cost_usd": 0.0020827,
+ "latency_s": 3.8899728749966016,
+ "output": {
+  "product_name": "Brakleen\u00ae Brake Parts Cleaner - 20 oz",
+  "manufacturer": "CRC Industries, Inc.",
+  "cas_numbers": [
+   "67-64-1",
+   "79-20-9",
+   "124-38-9",
+   "64742-49-0",
+   "426260-76-6",
+   "64742-89-8",
+   "589-34-4",
+   "142-82-5",
+   "591-76-4"
+  ],
+  "signal_word": "Danger",
+  "hazard_statements": [],
+  "un_number": "UN1950",
+  "flash_point_c": -18.8,
+  "physical_state": "liquid",
+  "ph": null,
+  "revision_date": "2019-03-14"
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 3675,
+ "output_tokens": 44,
+ "cost_usd": 0.01558,
+ "latency_s": 1.7494325000006938,
+ "output": {
+  "flash_point_c": {
+   "value": 49.0,
+   "quote": "Flash Point: 122F (49\u00b0C) Tag Open"
+  }
+ }
+}

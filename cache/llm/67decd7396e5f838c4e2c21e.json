@@ -1,0 +1,30 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2988,
+ "output_tokens": 827,
+ "cost_usd": 0.0007123,
+ "latency_s": 6.015000374994997,
+ "output": {
+  "product_name": {
+   "value": "WD-40 Specialist\u00ae Electric Contact Cleaner",
+   "quote": "Product Name: WD-40 Specialist\u00ae Electric Contact"
+  },
+  "manufacturer": {
+   "value": "WD-40 Products [Canada] Ltd.",
+   "quote": "WD-40 Products [Canada] Ltd."
+  },
+  "cas_numbers": {
+   "value": [
+    "64742-49-0",
+    "142-82-5",
+    "67-63-0",
+    "B5-37-6"
+   ],
+   "quote": "Heptane 64742-49-0 142-82-5 20-30% Flammable Liquid Category 2"
+  },
+  "revision_date": {
+   "value": "2024-12-23",
+   "quote": "SDS Date Of Preparation: Deccmber 23, 2024"
+  }
+ }
+}

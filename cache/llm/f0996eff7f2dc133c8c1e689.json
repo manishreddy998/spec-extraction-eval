@@ -1,0 +1,61 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 11245,
+ "output_tokens": 1477,
+ "cost_usd": 0.001863,
+ "latency_s": 13.698341333001736,
+ "output": {
+  "product_name": {
+   "value": "Rust-Oleum Chalked Ultra Matte Paint",
+   "quote": "Name on Label: Rust-Oleum Chalked Ultra Matte Paint"
+  },
+  "manufacturer": {
+   "value": "Rust-Oleum Corporation",
+   "quote": "Manufacturer: Rust-Oleum Corporation"
+  },
+  "cas_numbers": {
+   "value": [
+    "67-64-1",
+    "74-98-6",
+    "64742-47-8",
+    "64742-49-0",
+    "106-97-8",
+    "14807-96-6",
+    "13463-67-7",
+    "1309-37-1",
+    "1330-20-7",
+    "100-41-4",
+    "96-29-7",
+    "123-86-4"
+   ],
+   "quote": "Acetone 67-64-1 10-30 GHS02-GES07 H225-319-332-336"
+  },
+  "hazard_statements": {
+   "value": [
+    "H222",
+    "H229",
+    "H317",
+    "H319",
+    "H336",
+    "H351"
+   ],
+   "quote": "Aerosol, category 1 H222 Extremely flammable aerosol."
+  },
+  "un_number": {
+   "value": "UN1950",
+   "quote": "UN Number: N.A. 1950 1950 1950"
+  },
+  "flash_point_c": {
+   "value": -96.0,
+   "quote": "Flash Point, \u00b0C -96"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Physical State Liquid Decomposition Temperature, \u00b0C N.D."
+  },
+  "ph": {
+   "value": null,
+   "quote": "Color Gray pH N.A."
+  }
+ }
+}

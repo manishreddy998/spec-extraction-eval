@@ -1,0 +1,25 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 4569,
+ "output_tokens": 173,
+ "cost_usd": 0.0005434000000000001,
+ "latency_s": 1.8737234590007574,
+ "output": {
+  "product_name": {
+   "value": "WD-40 Bulk",
+   "quote": "Trade Name: WD-40 Bulk"
+  },
+  "manufacturer": {
+   "value": "WD-40 Products [Canada] Ltd.",
+   "quote": "WD-40 Products [Canada] Ltd."
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearance: Light grecn to amber \nliquid"
+  },
+  "revision_date": {
+   "value": "2021-08-02",
+   "quote": "Revision Date: August 2, 2021"
+  }
+ }
+}

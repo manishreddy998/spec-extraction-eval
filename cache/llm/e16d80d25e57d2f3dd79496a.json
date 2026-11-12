@@ -1,0 +1,22 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 2392,
+ "output_tokens": 116,
+ "cost_usd": 0.011888,
+ "latency_s": 2.354275707999477,
+ "output": {
+  "cas_numbers": {
+   "value": [
+    "64742-49-0",
+    "142-82-5",
+    "67-63-0",
+    "75-37-6"
+   ],
+   "quote": "Heptane 64742-49-0 \n142-82-5"
+  },
+  "revision_date": {
+   "value": "2024-12-23",
+   "quote": "SDS Date Of Preparation: Deccmber 23, 2024"
+  }
+ }
+}

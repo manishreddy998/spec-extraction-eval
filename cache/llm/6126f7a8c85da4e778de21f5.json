@@ -1,0 +1,15 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 13857,
+ "output_tokens": 51,
+ "cost_usd": 0.056448,
+ "latency_s": 2.206436541004223,
+ "output": {
+  "cas_numbers": {
+   "value": [
+    "127-18-4"
+   ],
+   "quote": "CAS-No.: 127-l8-4 80 - 100"
+  }
+ }
+}

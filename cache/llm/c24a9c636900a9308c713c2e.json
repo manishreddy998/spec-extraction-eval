@@ -1,0 +1,21 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2595,
+ "output_tokens": 171,
+ "cost_usd": 0.00034500000000000004,
+ "latency_s": 1.501091208003345,
+ "output": {
+  "product_name": {
+   "value": "ZEP PROFESSIONAL FAST EVAPORATING SOLVENT DEGREASER",
+   "quote": "Material name : ZEP PROFESSIONAL FAST EVAPORATING SOLVENT DEGREASER"
+  },
+  "manufacturer": {
+   "value": "Zep Inc.",
+   "quote": "Company : Zep Inc."
+  },
+  "physical_state": {
+   "value": null,
+   "quote": "Appearance : Aerosol containing a compressed gas"
+  }
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 10951,
+ "output_tokens": 1755,
+ "cost_usd": 0.0019726,
+ "latency_s": 11.77591641699837,
+ "output": {
+  "product_name": {
+   "value": "PRO LSPR 6PK FLAT BRIGHT GALV COMPOUND",
+   "quote": "Product Name: PRO LSPR 6PK FLAT BRIGHT GALV"
+  },
+  "manufacturer": {
+   "value": "Rust-Oleum Corporation",
+   "quote": "Manufacturer: Rust-Oleum Corporation"
+  },
+  "cas_numbers": {
+   "value": [
+    "7440-66-6",
+    "123-86-4",
+    "64742-47-8",
+    "74-98-6",
+    "7429-90-5",
+    "106-97-8",
+    "1330-20-7",
+    "1314-13-2",
+    "64742-95-6",
+    "8052-41-3",
+    "100-41-4",
+    "7631-86-9",
+    "5153-24-2"
+   ],
+   "quote": "Zinc 7440-66-6 25-50 GHS02-GHS07 H25O-26O-302"
+  },
+  "hazard_statements": {
+   "value": [
+    "H302",
+    "H350",
+    "H222",
+    "H280",
+    "H340",
+    "H372"
+   ],
+   "quote": "Acvte Toxicity, Oral, category 4 H302 Harmful if swallowed."
+  },
+  "un_number": {
+   "value": "UN1950",
+   "quote": "UN Number: N.A. 1950 1950 N.A."
+  },
+  "flash_point_c": {
+   "value": -96.0,
+   "quote": "Flammability: Supports Combustiom -96Flash Point, \u00b0C:"
+  },
+  "ph": {
+   "value": null,
+   "quote": ""
+  }
+ }
+}

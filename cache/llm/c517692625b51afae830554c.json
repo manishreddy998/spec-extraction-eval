@@ -1,0 +1,60 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 11357,
+ "output_tokens": 1730,
+ "cost_usd": 0.0020007000000000002,
+ "latency_s": 11.857333084000857,
+ "output": {
+  "product_name": {
+   "value": "Stops Rust Hammered White",
+   "quote": "Name on Labcl: Stops Rust Hammered White"
+  },
+  "manufacturer": {
+   "value": "Rust-Oleum Corporation",
+   "quote": "Manufacturcr: Rvst-Olevm Corporatiom"
+  },
+  "cas_numbers": {
+   "value": [
+    "67-64-1",
+    "74-98-6",
+    "64742-49-0",
+    "106-97-8",
+    "1330-20-7",
+    "13463-67-7",
+    "141-78-6",
+    "123-86-4",
+    "5131-66-8",
+    "100-41-4",
+    "7631-86-9",
+    "22464-99-9",
+    "96-29-7"
+   ],
+   "quote": "Acetone 67-64-l 15-40 GHS02-GHS07 H22S-319-332-336"
+  },
+  "hazard_statements": {
+   "value": [
+    "H222",
+    "H229",
+    "H317",
+    "H319",
+    "H336",
+    "H351",
+    "H360",
+    "H373"
+   ],
+   "quote": "Aerosol, category 1 H222 Extremely flammablc aerosol."
+  },
+  "un_number": {
+   "value": "UN1950",
+   "quote": "UN Number: N.A. 1950 1950 1950"
+  },
+  "ph": {
+   "value": null,
+   "quote": ""
+  },
+  "revision_date": {
+   "value": "2026-05-11",
+   "quote": "Revision Date: S/11/2026"
+  }
+ }
+}

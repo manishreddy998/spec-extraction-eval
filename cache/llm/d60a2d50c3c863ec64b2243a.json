@@ -1,0 +1,41 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 8031,
+ "output_tokens": 364,
+ "cost_usd": 0.0009851,
+ "latency_s": 10.067518875002861,
+ "output": {
+  "product_name": {
+   "value": "WD-40 Bulk",
+   "quote": "Trade Name: WD-40 Bulk"
+  },
+  "manufacturer": {
+   "value": "WD-40 Products [Canada] Ltd.",
+   "quote": "WD-40 Products [Canada] Ltd."
+  },
+  "hazard_statements": {
+   "value": [],
+   "quote": "May be fatal if swallowed and enters airways. May cause drowsiness or dizzincss."
+  },
+  "un_number": {
+   "value": null,
+   "quote": "Bulk Packaging: UN1268, Petrolevm Distillates, n.o.s., Combustible Liquid, PG III"
+  },
+  "flash_point_c": {
+   "value": 49.0,
+   "quote": "Flash Point: 122F (49\u00b0C) Tag Opcn"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearance: Light green to amber liquid"
+  },
+  "ph": {
+   "value": null,
+   "quote": "pE: Not Applicable"
+  },
+  "revision_date": {
+   "value": "2021-08-02",
+   "quote": "Revision Datc: August 2, 202l Supersedes: April 29, 2O20"
+  }
+ }
+}

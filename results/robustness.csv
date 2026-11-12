@@ -1,0 +1,9 @@
+corruption_rate,method,accuracy,silent_errors,flagged,flagged_and_wrong,cost_usd
+0.0,B_haiku_single,0.988,3,0,0,0.0403
+0.0,C_cascade,1.0,0,6,0,0.0591
+0.02,B_haiku_single,0.98,5,0,0,0.0413
+0.02,C_cascade,1.0,0,18,0,0.1885
+0.05,B_haiku_single,0.984,4,0,0,0.0428
+0.05,C_cascade,0.984,3,39,1,0.6555
+0.1,B_haiku_single,0.984,4,0,0,0.0445
+0.1,C_cascade,0.984,2,51,2,0.7778

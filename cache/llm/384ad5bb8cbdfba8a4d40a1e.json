@@ -1,0 +1,44 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 4033,
+ "output_tokens": 1237,
+ "cost_usd": 0.0010218,
+ "latency_s": 7.883448292006506,
+ "output": {
+  "product_name": {
+   "value": "UNVRSL SSPR 6PK GLS GREEN CITRUS",
+   "quote": "Product Name: UNVRSL SSPR 6PK GLS GREEN CITRUS"
+  },
+  "manufacturer": {
+   "value": "Rust-Oleum Corporation",
+   "quote": "Manufacturer: Rust-Oleum Corporation"
+  },
+  "cas_numbers": {
+   "value": [
+    "67-64-1",
+    "74-98-6",
+    "616-38-6",
+    "106-97-8",
+    "64B42-49-0",
+    "141-78-6",
+    "l23-86-4",
+    "1330-20-7",
+    "64742-47-8",
+    "763-69-9",
+    "13463-67-7",
+    "10O-4l-4",
+    "41556-26-7",
+    "111-76-2"
+   ],
+   "quote": "Acetone 67-64-1 10-25 GHS02-GHS07 H225-319-332-336"
+  },
+  "un_number": {
+   "value": null,
+   "quote": "14 - Transport Information"
+  },
+  "ph": {
+   "value": null,
+   "quote": "Relative Density: 0.767 pE: N.A."
+  }
+ }
+}

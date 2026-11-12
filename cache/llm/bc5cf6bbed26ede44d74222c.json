@@ -1,0 +1,30 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 3006,
+ "output_tokens": 230,
+ "cost_usd": 0.016624,
+ "latency_s": 3.021628958005749,
+ "output": {
+  "product_name": {
+   "value": "LOCTITE\u00ae 242\u00ae THREADLOCKER MEDIUM STRENGTH PART NO. 24241",
+   "quote": "Product namc: LOCTITE\u00ae 242\u00ae THREADLOCKER"
+  },
+  "manufacturer": {
+   "value": "Henkel Corporation",
+   "quote": "Hcnkel Corporation"
+  },
+  "cas_numbers": {
+   "value": [
+    "112945-52-5",
+    "80-15-9",
+    "57-55-6",
+    "13463-67-7"
+   ],
+   "quote": "diameter \u2264 10 \u03bcm 13463-6B-7 O.1 - 1"
+  },
+  "revision_date": {
+   "value": "2025-02-12",
+   "quote": "Issve date: 02/12/2025"
+  }
+ }
+}

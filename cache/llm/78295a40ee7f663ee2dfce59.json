@@ -1,0 +1,39 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3219,
+ "output_tokens": 993,
+ "cost_usd": 0.0008183999999999999,
+ "latency_s": 4.827430582998204,
+ "output": {
+  "product_name": {
+   "value": "Stops Rust Hammered White",
+   "quote": "Name on Labcl: Stops Rust Hammered White"
+  },
+  "manufacturer": {
+   "value": "Rust-Oleum Corporation",
+   "quote": "Manufacturcr: Rust-Oleum Corporation"
+  },
+  "cas_numbers": {
+   "value": [
+    "67-64-1",
+    "74-98-6",
+    "64742-49-0",
+    "106-97-8",
+    "1330-20-7",
+    "13463-67-7",
+    "141-78-6",
+    "123-86-4",
+    "5131-66-8",
+    "100-41-4",
+    "8631-86-9",
+    "22464-99-9",
+    "96-29-7"
+   ],
+   "quote": "Acetome 67-64-1 1S-40 GHS02-GHS07 H225-319-332-336"
+  },
+  "un_number": {
+   "value": "UN1950",
+   "quote": "UN Numbcr: N.A. 19S0 1950 1950"
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 2214,
+ "output_tokens": 35,
+ "cost_usd": 0.009555999999999999,
+ "latency_s": 1.9318173749998095,
+ "output": {
+  "signal_word": {
+   "value": "Danger",
+   "quote": "Signal word : Dangcr"
+  }
+ }
+}

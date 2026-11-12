@@ -1,0 +1,43 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3638,
+ "output_tokens": 1236,
+ "cost_usd": 0.0009818,
+ "latency_s": 7.876350207996438,
+ "output": {
+  "product_name": {
+   "value": "Painter's Touch Ultra Cover 2X Spray",
+   "quote": "Name on Label: Painter's Touch Ultra Cover 2X Spray"
+  },
+  "manufacturer": {
+   "value": "Rust-Oleum Canada (ROCA)",
+   "quote": "Manufacturer: Rust-Oleum Canada (ROCA)"
+  },
+  "cas_numbers": {
+   "value": [
+    "67-64-1",
+    "74-98-6",
+    "13463-67-7",
+    "106-97-8",
+    "64742-49-0",
+    "1330-20-7",
+    "14807-96-6",
+    "123-86-4",
+    "64742-47-8",
+    "100-41-4",
+    "142-82-5",
+    "111-65-9",
+    "22464-99-9"
+   ],
+   "quote": "Acetone 67-64-1 10-30 GHS02-GHS07 H225-319-332-336"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Liquid Decomposition Temperature, \u00b0CPhysical State N.D."
+  },
+  "ph": {
+   "value": null,
+   "quote": "pHColor Not Yet Specified N.A."
+  }
+ }
+}

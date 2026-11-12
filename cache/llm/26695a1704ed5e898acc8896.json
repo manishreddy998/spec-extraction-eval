@@ -1,0 +1,36 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3757,
+ "output_tokens": 1286,
+ "cost_usd": 0.0010187,
+ "latency_s": 6.909466499993869,
+ "output": {
+  "product_name": {
+   "value": "Simple Green\u00ae All-Purpose Cleaner",
+   "quote": "Product Name: Simple Green\u00ae All-Purpose Cleaner"
+  },
+  "manufacturer": {
+   "value": "Sunshine Makers, Inc.",
+   "quote": "Company: Sunshine Makers, Inc."
+  },
+  "cas_numbers": {
+   "value": [
+    "7732-18-5",
+    "519B1-2l-6",
+    "144-55-8",
+    "104-46-1",
+    "26172-55-4",
+    "2682-20-4"
+   ],
+   "quote": "Water 7732-18-5 > 85.000%* Surfactant Proprietary < 5.000%* Tetrasodium Glutamate Diacctate 519B1-2l-6 < 2.000%*"
+  },
+  "flash_point_c": {
+   "value": 100.0,
+   "quote": "Flash Point: > 212oF"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearancc: Green Liquid"
+  }
+ }
+}

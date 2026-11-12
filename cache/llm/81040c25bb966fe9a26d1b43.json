@@ -1,0 +1,26 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 9080,
+ "output_tokens": 175,
+ "cost_usd": 0.03982,
+ "latency_s": 2.244401292002294,
+ "output": {
+  "cas_numbers": {
+   "value": [
+    "67-64-1",
+    "74-98-6",
+    "64742-47-8",
+    "64742-49-0",
+    "106-97-8",
+    "14807-96-6",
+    "13463-67-7",
+    "1309-37-1",
+    "1330-20-7",
+    "100-41-4",
+    "96-29-7",
+    "123-86-4"
+   ],
+   "quote": "Naphtha, Petroleum, Hydrotreated Light 64B42-49-0 5.0-l0 GHS08 H304\nn-Butane 106-9B-8 5.0-10 GHS04 H280"
+  }
+ }
+}

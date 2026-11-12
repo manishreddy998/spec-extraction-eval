@@ -1,0 +1,24 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 15531,
+ "output_tokens": 623,
+ "cost_usd": 0.0018646000000000001,
+ "latency_s": 3.2778296250035055,
+ "output": {
+  "product_name": "WD-40 Specialist\u00ae Electric Contact Cleaner",
+  "manufacturer": "WD-40 Products [Canada] Ltd.",
+  "cas_numbers": [
+   "64742-49-0",
+   "142-82-5",
+   "67-63-0",
+   "75-37-6"
+  ],
+  "signal_word": "Danger",
+  "hazard_statements": [],
+  "un_number": "UN1950",
+  "flash_point_c": -9.0,
+  "physical_state": "liquid",
+  "ph": null,
+  "revision_date": "2024-12-23"
+ }
+}

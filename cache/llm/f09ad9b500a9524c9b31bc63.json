@@ -1,0 +1,37 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3725,
+ "output_tokens": 923,
+ "cost_usd": 0.000834,
+ "latency_s": 7.9669522080002935,
+ "output": {
+  "product_name": {
+   "value": "ZEP I.D. RED INDUSTRIAL DEGREASER 1GL 4CT",
+   "quote": "ZEP I.D. RED INDUSTRIAL DEGREASER 1GL 4CT"
+  },
+  "manufacturer": {
+   "value": "Zep Inc.",
+   "quote": "Company : Zep Imc."
+  },
+  "cas_numbers": {
+   "value": [
+    "64742-49-0",
+    "67-63-0",
+    "142-82-5"
+   ],
+   "quote": "Naphtha (petroleum), hydrotreated light 64742-49-0 >= 70 - < 9O"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearamce : liquid"
+  },
+  "ph": {
+   "value": null,
+   "quote": ""
+  },
+  "revision_date": {
+   "value": "2023-10-01",
+   "quote": "Version 5.3 Revision Date 10/01/2O23"
+  }
+ }
+}

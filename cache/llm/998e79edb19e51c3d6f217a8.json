@@ -1,0 +1,41 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 10599,
+ "output_tokens": 1456,
+ "cost_usd": 0.0017879000000000003,
+ "latency_s": 6.2344766660025925,
+ "output": {
+  "product_name": "Tremclad Rust Paint",
+  "manufacturer": "Rust-Oleum Canada (ROCA)",
+  "cas_numbers": [
+   "64742-48-8",
+   "2786-76-7",
+   "1309-37-1",
+   "22464-99-9",
+   "96-29-7",
+   "110-43-0",
+   "2530-83-8",
+   "64742-95-6",
+   "136-52-7",
+   "41556-26-7",
+   "95-63-6",
+   "100-41-4",
+   "7631-86-9",
+   "64742-48-9",
+   "6846-50-0"
+  ],
+  "signal_word": "Danger",
+  "hazard_statements": [
+   "H226",
+   "H317",
+   "H340",
+   "H350",
+   "H360"
+  ],
+  "un_number": "UN1263",
+  "flash_point_c": 39.0,
+  "physical_state": null,
+  "ph": null,
+  "revision_date": "2025-05-21"
+ }
+}

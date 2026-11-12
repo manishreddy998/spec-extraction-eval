@@ -1,0 +1,23 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 14971,
+ "output_tokens": 497,
+ "cost_usd": 0.0017456000000000001,
+ "latency_s": 2.6889081670015003,
+ "output": {
+  "product_name": "WD-40 Multi-Use Product Aerosol",
+  "manufacturer": "WD-40 Products [Canada] Ltd.",
+  "cas_numbers": [
+   "64742-47-8",
+   "64742-47-8",
+   "124-38-9"
+  ],
+  "signal_word": "Danger",
+  "hazard_statements": [],
+  "un_number": "UN1950",
+  "flash_point_c": 59.0,
+  "physical_state": "liquid",
+  "ph": null,
+  "revision_date": "2023-10-09"
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 5034,
+ "output_tokens": 857,
+ "cost_usd": 0.0009319,
+ "latency_s": 9.794982084000367,
+ "output": {
+  "product_name": {
+   "value": "LOCTITE 242",
+   "quote": "LOCTITE 242"
+  },
+  "manufacturer": {
+   "value": "Henkel Ltd",
+   "quote": "Hemkel Ltd"
+  },
+  "cas_numbers": {
+   "value": [
+    "80-15-9",
+    "613-48-9",
+    "13463-67-7",
+    "130-15-4"
+   ],
+   "quote": "Cumene hydropcroxide"
+  },
+  "signal_word": {
+   "value": "Warning",
+   "quote": "Sigmal word: Warning"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearance liquid"
+  },
+  "ph": {
+   "value": 3.0,
+   "quote": "3 - 6"
+  }
+ }
+}

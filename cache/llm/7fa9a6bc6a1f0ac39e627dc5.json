@@ -1,0 +1,27 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 4121,
+ "output_tokens": 150,
+ "cost_usd": 0.019483999999999998,
+ "latency_s": 3.0310272499991697,
+ "output": {
+  "cas_numbers": {
+   "value": [
+    "64742-49-0",
+    "64-17-5",
+    "124-38-9",
+    "67-56-1",
+    "142-82-5"
+   ],
+   "quote": "carbon dioxide 124-3B-9 >= 5 - < 10"
+  },
+  "signal_word": {
+   "value": "Danger",
+   "quote": "Signal word : Dangcr"
+  },
+  "physical_state": {
+   "value": null,
+   "quote": "Appearance : Aerosol containimg a compresscd gas"
+  }
+ }
+}

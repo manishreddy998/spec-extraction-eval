@@ -1,0 +1,42 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 10480,
+ "output_tokens": 1123,
+ "cost_usd": 0.0016095000000000003,
+ "latency_s": 4.767889249997097,
+ "output": {
+  "product_name": "Stops Rust Hammered White",
+  "manufacturer": "Rust-Oleum Corporation",
+  "cas_numbers": [
+   "67-64-1",
+   "74-98-6",
+   "64742-49-0",
+   "106-97-8",
+   "1330-20-7",
+   "13463-67-7",
+   "141-78-6",
+   "123-86-4",
+   "5131-66-8",
+   "100-41-4",
+   "7631-86-9",
+   "22464-99-9",
+   "96-29-7"
+  ],
+  "signal_word": "Danger",
+  "hazard_statements": [
+   "H222",
+   "H229",
+   "H317",
+   "H319",
+   "H336",
+   "H351",
+   "H360",
+   "H373"
+  ],
+  "un_number": "UN1950",
+  "flash_point_c": -96.0,
+  "physical_state": "liquid",
+  "ph": null,
+  "revision_date": "2026-05-11"
+ }
+}

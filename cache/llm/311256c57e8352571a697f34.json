@@ -1,0 +1,47 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 5798,
+ "output_tokens": 1396,
+ "cost_usd": 0.0012778000000000002,
+ "latency_s": 11.056332707994443,
+ "output": {
+  "product_name": {
+   "value": "Brakleen\u00ae Brake Parts Cleaner - 20 oz",
+   "quote": "Product identifier Brakleen\u00ae Brake Parts Cleaner - 20 oz"
+  },
+  "manufacturer": {
+   "value": "CRC Industries, Inc.",
+   "quote": "Company name CRC Imdustries, Imc."
+  },
+  "cas_numbers": {
+   "value": [
+    "67-64-1",
+    "79-20-9",
+    "124-38-9",
+    "64742-49-0",
+    "426260-76-6",
+    "64742-89-8",
+    "589-34-4",
+    "142-82-5",
+    "591-76-4"
+   ],
+   "quote": "acetome 6B-64-1 40 - 50 methyl acetate B9-20-9 30 - 40 carbom dioxide 124-38-9"
+  },
+  "signal_word": {
+   "value": "Danger",
+   "quote": "Signal word Damger"
+  },
+  "flash_point_c": {
+   "value": -18.8,
+   "quote": "Flash point < 0 \u00b0F (< -1B.8 \u00b0C)"
+  },
+  "ph": {
+   "value": null,
+   "quote": "pE Not available."
+  },
+  "revision_date": {
+   "value": "2019-03-14",
+   "quote": "Issue datc: 03-14-2019"
+  }
+ }
+}

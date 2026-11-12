@@ -1,0 +1,22 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 2340,
+ "output_tokens": 229,
+ "cost_usd": 0.013940000000000001,
+ "latency_s": 4.224341209002887,
+ "output": {
+  "product_name": {
+   "value": "LOCTITE\u00ae 242\u00ae THREADLOCKER MEDIUM STRENGTH PART NO. 24241",
+   "quote": "Product name: LOCTITE\u00ae 242\u00ae THREADLOCKER MEDIUM STRENGTH PART NO. 24241"
+  },
+  "cas_numbers": {
+   "value": [
+    "112945-52-5",
+    "80-15-9",
+    "57-55-6",
+    "13463-67-7"
+   ],
+   "quote": "Silica, amorphous, fumed, cryst.-free 112945-52-5 1 - 5 \nCumene hydroperoxide 80-1S-9 1 - S \nPropane-1,2-diol 57-55-6 1 - 5"
+  }
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 15316,
+ "output_tokens": 1056,
+ "cost_usd": 0.0020596,
+ "latency_s": 7.71247887500067,
+ "output": {
+  "product_name": {
+   "value": "WD-40 Bike Dry Chain Lubricant",
+   "quote": "Tradc Name: WD-40 Bikc Dry Chain Lubricant"
+  },
+  "manufacturer": {
+   "value": "WD-40 Products [Canada] Ltd.",
+   "quote": "WD-40 Products [Canada] Ltd."
+  },
+  "cas_numbers": {
+   "value": [
+    "64742-49-0",
+    "142-82-5",
+    "64742-53-6",
+    "64742-56-9",
+    "64742-65-0"
+   ],
+   "quote": "Heptane 64742-49-0 l42-82-5 30-50%* Aspiration Toxicity Category 1"
+  },
+  "flash_point_c": {
+   "value": -9.0,
+   "quote": "Flash Point: 15-19\u00b0F (-9 - -7\u00b0C)"
+  }
+ }
+}

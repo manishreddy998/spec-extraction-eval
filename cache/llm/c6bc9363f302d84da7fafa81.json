@@ -1,0 +1,13 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 1538,
+ "output_tokens": 41,
+ "cost_usd": 0.006972000000000001,
+ "latency_s": 1.8506243340016226,
+ "output": {
+  "revision_date": {
+   "value": "2020-08-02",
+   "quote": "Revision Date: O8/02/2020"
+  }
+ }
+}

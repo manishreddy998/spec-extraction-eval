@@ -1,0 +1,13 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 5461,
+ "output_tokens": 47,
+ "cost_usd": 0.022784,
+ "latency_s": 1.9305056660014088,
+ "output": {
+  "revision_date": {
+   "value": "2024-09-04",
+   "quote": "SDS Date Of Preparation: September 4, 2024"
+  }
+ }
+}

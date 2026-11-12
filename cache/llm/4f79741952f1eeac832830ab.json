@@ -1,0 +1,49 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 17504,
+ "output_tokens": 507,
+ "cost_usd": 0.0020039,
+ "latency_s": 18.149054916997557,
+ "output": {
+  "product_name": {
+   "value": "WD-40 Specialist\u00ae Dry Lube",
+   "quote": "Trade Name: WD-40 Specialist\u00ae Dry Lube"
+  },
+  "manufacturer": {
+   "value": "WD-40 Products [Canada] Ltd.",
+   "quote": "Canadian Office: WD-40 Products [Canada] Ltd."
+  },
+  "cas_numbers": {
+   "value": [
+    "64742-49-0",
+    "142-82-5",
+    "74-98-6"
+   ],
+   "quote": "Heptane 64742-49-0 142-82-5 70-80% * Aspiration Toxicity Category 1"
+  },
+  "hazard_statements": {
+   "value": [],
+   "quote": "WHMIS 2022/GHS Classification: Aerosol Category 1 Aspiration Toxicity Category 1 Skin Irritant Category 2"
+  },
+  "un_number": {
+   "value": "UN1950",
+   "quote": "DOT Surface Shippimg Description: UN1950, Aerosols, 2.1 Ltd. Qty"
+  },
+  "flash_point_c": {
+   "value": -29.2,
+   "quote": "Flash Point: <-29.2\u00b0F Tag Closed Cup"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Physical State: Liquid Particle Characteristics: Not applicable"
+  },
+  "ph": {
+   "value": null,
+   "quote": "pH: Not Applicablc Relative Density: 0.72"
+  },
+  "revision_date": {
+   "value": "2024-09-04",
+   "quote": "Revision Datc: September 4, 2024 Svpersedes: June 1, 2023"
+  }
+ }
+}

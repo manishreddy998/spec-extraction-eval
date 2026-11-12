@@ -1,0 +1,63 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 11078,
+ "output_tokens": 1720,
+ "cost_usd": 0.0019678,
+ "latency_s": 15.963148124996223,
+ "output": {
+  "product_name": {
+   "value": "Painter's Touch Ultra Cover 2X Spray",
+   "quote": "Name on Label: Painter's Touch Ultra Cover 2X Spray"
+  },
+  "manufacturer": {
+   "value": "Rust-Oleum Canada (ROCA)",
+   "quote": "Manufacturer: Rvst-Oleum Canada (ROCA)"
+  },
+  "cas_numbers": {
+   "value": [
+    "67-64-1",
+    "74-98-6",
+    "13463-67-7",
+    "106-97-8",
+    "64742-49-0",
+    "1330-20-7",
+    "14807-96-6",
+    "123-86-4",
+    "64742-48-8",
+    "100-41-4",
+    "142-82-5",
+    "111-65-9",
+    "22464-99-9"
+   ],
+   "quote": "Acetone 6B-64-1 10-30 GHS02-GHSO7 H225-319-332-336"
+  },
+  "signal_word": {
+   "value": "Danger",
+   "quote": "Dangcr"
+  },
+  "hazard_statements": {
+   "value": [
+    "H222",
+    "H229",
+    "H319",
+    "H336",
+    "H351",
+    "H360",
+    "H373"
+   ],
+   "quote": "Aerosol, catcgory l H222 Extremely flammable aerosol."
+  },
+  "un_number": {
+   "value": "UN1950",
+   "quote": "UN Number: N.A. 1950 1950 1950"
+  },
+  "physical_state": {
+   "value": null,
+   "quote": "Liqvid Decomposition Temperature, \u00b0CPhysical State N.D."
+  },
+  "ph": {
+   "value": null,
+   "quote": "pHColor Not Yet Specified N.A."
+  }
+ }
+}

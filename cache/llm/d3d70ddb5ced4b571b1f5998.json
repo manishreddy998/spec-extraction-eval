@@ -1,0 +1,48 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 8921,
+ "output_tokens": 1093,
+ "cost_usd": 0.0014386,
+ "latency_s": 14.204147916992952,
+ "output": {
+  "product_name": {
+   "value": "Simple Green\u00ae All-Purpose Cleaner",
+   "quote": "Product Namc: Simple Green\u00ae All-Purposc Cleaner"
+  },
+  "manufacturer": {
+   "value": "Sunshine Makers, Inc.",
+   "quote": "Company: Sunshine Makers, Inc."
+  },
+  "cas_numbers": {
+   "value": [
+    "7732-18-5",
+    "51981-21-6",
+    "144-55-8",
+    "104-46-1",
+    "26172-55-4",
+    "2682-20-4"
+   ],
+   "quote": "Water 7732-18-5 > 85.000%*"
+  },
+  "signal_word": {
+   "value": "None",
+   "quote": "Signal Word: Nonc Hazard Symbol(s)/Pictogram(s): None required"
+  },
+  "hazard_statements": {
+   "value": [],
+   "quote": "Hazard Statements: None"
+  },
+  "un_number": {
+   "value": null,
+   "quote": "U.N. Number: Not applicable"
+  },
+  "flash_point_c": {
+   "value": 100.0,
+   "quote": "Flash Point: > 2l2oF SCAQMD 3O4-91 / EPA 24: Not testcd"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearance: Green Liquid Partition Coefficient: n-octanol/watcr: Not determimed"
+  }
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3663,
+ "output_tokens": 1086,
+ "cost_usd": 0.0009093,
+ "latency_s": 7.874422917004267,
+ "output": {
+  "product_name": {
+   "value": "ZEP CONC DRIVEWAY & CONCRETE CLEANER & DEGREASER 1GL 4CT",
+   "quote": "ZEP CONC DRIVEWAY & CONCRETE CLEANER & DEGREASER 1GL 4CT"
+  },
+  "manufacturer": {
+   "value": "Zcp Inc.",
+   "quote": "Company : Zcp Inc."
+  },
+  "cas_numbers": {
+   "value": [
+    "68439-46-3",
+    "111-76-2",
+    "1310-83-2",
+    "68081-81-2"
+   ],
+   "quote": "Alcohols, C9-l1, ethoxylated 68439-46-3 >= 3 - < S"
+  },
+  "flash_point_c": {
+   "value": null,
+   "quote": "does mot flash"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearance : liquid"
+  },
+  "revision_date": {
+   "value": "2023-10-01",
+   "quote": "Revision Date l0/01/2O23"
+  }
+ }
+}

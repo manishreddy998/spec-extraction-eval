@@ -49,16 +49,25 @@ def value_in_quote(field: str, value: Any, quote: str) -> bool:
     if field == "un_number":
         return str(value)[-4:] in q
     if field == "flash_point_c":
-        nums = _numbers(q)
-        return any(abs(n - value) <= 0.5 or abs((n - 32) * 5 / 9 - value) <= 0.5 for n in nums)
+        # unit-aware: a Celsius answer must match a °C number, or a °F number after conversion
+        for num, unit in re.findall(r"(-?\d+(?:\.\d+)?)\s*(?:°|o)?\s*([cf])?\b", q):
+            n = float(num)
+            if unit == "f" and abs((n - 32) * 5 / 9 - value) <= 0.5:
+                return True
+            if unit != "f" and abs(n - value) <= 0.5:
+                return True
+        return False  # e.g. "-29.2" copied from "<-29.2°F" without converting
     if field == "ph":
         return any(abs(n - value) <= 0.1 for n in _numbers(q))
     if field in ("signal_word", "physical_state"):
         return _squash(str(value)) in q
     if field == "revision_date":
+        # the quote must contain the date written in one of the ways SDSs write it
         y, m, d = (int(x) for x in str(value).split("-"))
         month = datetime(2000, m, 1).strftime("%B").lower()
-        return str(y) in q and (month in q or f"{m:02d}" in q or f"{m}/" in q or f"{d:02d}" in q)
+        forms = {f"{m}/{d}/{y}", f"{m:02d}/{d:02d}/{y}", f"{m:02d}-{d:02d}-{y}", f"{m}-{d}-{y}",
+                 f"{d:02d}.{m:02d}.{y}", f"{month} {d}, {y}", f"{month} {d},{y}", f"{y}-{m:02d}-{d:02d}"}
+        return any(f in q for f in forms)
     # names: most of the value's words should be in the quote
     words = set(re.findall(r"[a-z0-9]+", _squash(str(value))))
     return bool(words) and len(words & set(re.findall(r"[a-z0-9]+", q))) / len(words) >= 0.6
@@ -74,7 +83,8 @@ def null_contradicted(field: str, value: Any, quote: str) -> bool:
     if field == "signal_word":
         return bool(re.search(r"\b(danger|warning)\b", q))
     if field == "un_number":
-        return bool(re.search(r"\bun\s?\d{4}\b", q))
+        # "not regulated" must be said, not inferred from a heading
+        return bool(re.search(r"\bun\s?\d{4}\b", q)) or not re.search(r"not|n/?a|none|exempt", q)
     if field == "flash_point_c":
         return bool(re.search(r"-?\d+(\.\d+)?\s*°?\s*[cf]\b", q)) and "not" not in q
     if field == "cas_numbers":

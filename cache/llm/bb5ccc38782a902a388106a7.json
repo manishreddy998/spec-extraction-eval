@@ -1,0 +1,21 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2478,
+ "output_tokens": 412,
+ "cost_usd": 0.00045379999999999997,
+ "latency_s": 3.0532571660005488,
+ "output": {
+  "product_name": {
+   "value": "PRO LSPR 6PK FLAT BRIGHT GALV COMPOUND",
+   "quote": "Product Name: PRO LSPR 6PK FLAT BRIGHT GALV"
+  },
+  "manufacturer": {
+   "value": "Rust-Oleum Corporation",
+   "quote": "Manufacturer: Rust-Oleum Corporation"
+  },
+  "flash_point_c": {
+   "value": -96.0,
+   "quote": "-96Flash Point, \u00b0C:"
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 2049,
+ "output_tokens": 72,
+ "cost_usd": 0.009636,
+ "latency_s": 2.5516937499996857,
+ "output": {
+  "un_number": {
+   "value": "UN1993",
+   "quote": "UN1993, FLAMMABLE LIQUID, N.O.S., (HEPTANE, ISOPROPANOL), 3, II"
+  }
+ }
+}

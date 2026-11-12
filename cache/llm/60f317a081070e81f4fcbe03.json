@@ -1,0 +1,50 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 4412,
+ "output_tokens": 1355,
+ "cost_usd": 0.0011187,
+ "latency_s": 8.596784542001842,
+ "output": {
+  "product_name": {
+   "value": "PRO LSPR 6PK FLAT BRIGHT GALV COMPOUND",
+   "quote": "Product Name: PRO LSPR 6PK FLAT BRIGHT GALV"
+  },
+  "manufacturer": {
+   "value": "Rust-Oleum Corporation",
+   "quote": "Manufacturer: Rust-Oleum Corporation"
+  },
+  "cas_numbers": {
+   "value": [
+    "7440-66-6",
+    "123-86-4",
+    "64742-47-8",
+    "74-98-6",
+    "7429-90-5",
+    "106-97-8",
+    "1330-20-7",
+    "1314-13-2",
+    "64742-95-6",
+    "80S2-41-3",
+    "100-41-4",
+    "7631-86-9",
+    "5153-24-2"
+   ],
+   "quote": "Zinc 7440-66-6 25-50 GHS02-GHS07 H250-260-302"
+  },
+  "hazard_statements": {
+   "value": [
+    "H302",
+    "H350",
+    "H222",
+    "H280",
+    "H340",
+    "H372"
+   ],
+   "quote": "Acute Toxicity, Oral, category 4 H3O2 Harmful if swallowed."
+  },
+  "flash_point_c": {
+   "value": -96.0,
+   "quote": "Flammability: Supports Combustion -96Flash Point, \u00b0C:"
+  }
+ }
+}

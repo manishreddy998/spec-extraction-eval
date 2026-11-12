@@ -1,0 +1,51 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 10920,
+ "output_tokens": 352,
+ "cost_usd": 0.050719999999999994,
+ "latency_s": 5.001537292002467,
+ "output": {
+  "cas_numbers": {
+   "value": [
+    "64742-48-8",
+    "2786-76-7",
+    "1309-37-1",
+    "22464-99-9",
+    "96-29-7",
+    "110-43-0",
+    "2530-83-8",
+    "64742-95-6",
+    "136-52-8",
+    "41556-26-7",
+    "95-63-6",
+    "100-41-4",
+    "8631-86-9",
+    "64742-48-9",
+    "6846-50-0"
+   ],
+   "quote": "Hydrotreatcd Light Distillate 64742-4B-8 15-40 GHS08 H304"
+  },
+  "hazard_statements": {
+   "value": [
+    "H226",
+    "H317",
+    "H340",
+    "H350",
+    "H360"
+   ],
+   "quote": "Flammable Liquid, category 3 H226 Flammable liquid and vapour."
+  },
+  "un_number": {
+   "value": "UN1263",
+   "quote": "UN Number: N.A. l263 l263 N.A."
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Liquid Dccomposition Temperatvre, \u00b0CPhysical State N.D."
+  },
+  "revision_date": {
+   "value": "2025-05-21",
+   "quote": "5/21/2O25SDS REVISION DATE:"
+  }
+ }
+}

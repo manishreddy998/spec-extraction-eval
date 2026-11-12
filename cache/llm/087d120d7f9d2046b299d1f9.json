@@ -1,0 +1,31 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 15114,
+ "output_tokens": 244,
+ "cost_usd": 0.0016334,
+ "latency_s": 2.5573189580027247,
+ "output": {
+  "product_name": {
+   "value": "CRC\u00ae Brakleen\u00ae Brake Parts Cleaner, 1 Gal",
+   "quote": "Trade name : CRC\u00ae Brakleen\u00ae Brake Parts Cleaner, 1 Gal"
+  },
+  "manufacturer": {
+   "value": "CRC Industries, Inc.",
+   "quote": "CRC Industries, Inc."
+  },
+  "cas_numbers": {
+   "value": [
+    "127-18-4"
+   ],
+   "quote": "CAS-No.: 127-l8-4 80 - 100"
+  },
+  "flash_point_c": {
+   "value": null,
+   "quote": "Flash point : Nonc"
+  },
+  "revision_date": {
+   "value": "2025-02-20",
+   "quote": "Issue datc: 2/20/2025 Version: 1.0"
+  }
+ }
+}

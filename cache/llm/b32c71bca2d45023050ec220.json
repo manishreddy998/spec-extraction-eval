@@ -1,0 +1,13 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 1990,
+ "output_tokens": 41,
+ "cost_usd": 0.00878,
+ "latency_s": 1.533480124999187,
+ "output": {
+  "physical_state": {
+   "value": null,
+   "quote": "Appearance : Aerosol containing a compressed gas"
+  }
+ }
+}

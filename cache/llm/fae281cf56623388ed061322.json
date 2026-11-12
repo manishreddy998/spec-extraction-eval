@@ -1,0 +1,29 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 9389,
+ "output_tokens": 166,
+ "cost_usd": 0.040875999999999996,
+ "latency_s": 3.35078825000528,
+ "output": {
+  "signal_word": {
+   "value": "Danger",
+   "quote": "Signal Word\nDangcr"
+  },
+  "hazard_statements": {
+   "value": [
+    "H222",
+    "H229",
+    "H319",
+    "H336",
+    "H351",
+    "H360",
+    "H373"
+   ],
+   "quote": "STOT, Rcpeated Exposurc, category 2 E373 May cause damage to organs through prolonged or repeated exposure."
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Liquid Decomposition Temperature, \u00b0CPhysical State N.D."
+  }
+ }
+}

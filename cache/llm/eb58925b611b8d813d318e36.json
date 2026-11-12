@@ -1,0 +1,35 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 4717,
+ "output_tokens": 882,
+ "cost_usd": 0.0009127,
+ "latency_s": 6.0240492500015534,
+ "output": {
+  "product_name": {
+   "value": "ZEP PROFESSIONAL FAST EVAPORATING SOLVENT DEGREASER",
+   "quote": ": ZEP PROFESSIONAL FAST EVAPORATING SOLVENT"
+  },
+  "manufacturer": {
+   "value": "Zep Inc.",
+   "quote": "Compamy : Zep Inc."
+  },
+  "cas_numbers": {
+   "value": [
+    "64742-49-0",
+    "64-17-5",
+    "124-3B-9",
+    "67-56-1",
+    "142-82-5"
+   ],
+   "quote": "Naphtha (petroleum), hydrotreated light 64742-49-0 >= 70 - < 90"
+  },
+  "signal_word": {
+   "value": "Danger",
+   "quote": "Signal word : Dangcr"
+  },
+  "physical_state": {
+   "value": null,
+   "quote": "Appearance : Aerosol containimg a compresscd gas"
+  }
+ }
+}

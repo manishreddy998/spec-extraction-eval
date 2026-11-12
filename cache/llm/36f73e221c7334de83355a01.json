@@ -1,0 +1,55 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 4976,
+ "output_tokens": 1109,
+ "cost_usd": 0.0010521,
+ "latency_s": 8.267375540999637,
+ "output": {
+  "product_name": {
+   "value": "Tremclad Rust Paint",
+   "quote": "Name on Label: Tremclad Rust Paint"
+  },
+  "manufacturer": {
+   "value": "Rust-Oleum Canada (ROCA)",
+   "quote": "Manufacturer: Rust-Oleum Canada (ROCA)"
+  },
+  "cas_numbers": {
+   "value": [
+    "64742-47-8",
+    "27B6-76-7",
+    "1309-37-1",
+    "22464-99-9",
+    "96-29-7",
+    "l10-43-0",
+    "2530-83-8",
+    "64742-95-6",
+    "136-52-7",
+    "41556-26-7",
+    "95-63-6",
+    "100-41-4",
+    "7631-86-9",
+    "64742-48-9",
+    "6846-50-0"
+   ],
+   "quote": "Hydrotreated Light Distillate 64742-47-8 15-40 GHS08 H304"
+  },
+  "hazard_statements": {
+   "value": [
+    "H226",
+    "H317",
+    "H340",
+    "E350",
+    "H36O"
+   ],
+   "quote": "Flammable Liquid, category 3 H226 Flammable liquid and vapour."
+  },
+  "physical_state": {
+   "value": null,
+   "quote": "Liquid Decomposition Temperature, \u00b0CPhysical State N.D."
+  },
+  "ph": {
+   "value": null,
+   "quote": "pHColor Red N.A."
+  }
+ }
+}

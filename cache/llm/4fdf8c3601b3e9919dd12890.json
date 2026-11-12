@@ -1,0 +1,33 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 16597,
+ "output_tokens": 322,
+ "cost_usd": 0.0018207000000000002,
+ "latency_s": 3.5291394160012715,
+ "output": {
+  "product_name": {
+   "value": "WD-40 Specialist\u00ae Dry Lubc",
+   "quote": "Trade Name: WD-40 Specialist\u00ae Dry Lubc"
+  },
+  "manufacturer": {
+   "value": "WD-40 Products [Canada] Ltd.",
+   "quote": "WD-40 Products [Canada] Ltd."
+  },
+  "cas_numbers": {
+   "value": [
+    "64742-49-0",
+    "142-82-5",
+    "74-98-6"
+   ],
+   "quote": "Eeptane 64742-49-0 l42-82-5 70-80% * Aspiration Toxicity Category 1"
+  },
+  "hazard_statements": {
+   "value": [],
+   "quote": "WHMIS 2022/GHS Classificatiom: Aerosol Category 1 Aspiration Toxicity Category 1 Skin Irritant Catcgory 2"
+  },
+  "revision_date": {
+   "value": "2024-09-04",
+   "quote": "Revision Date: September 4, 2024 Superscdes: June 1, 2023"
+  }
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 6516,
+ "output_tokens": 157,
+ "cost_usd": 0.029204,
+ "latency_s": 3.1747955000028014,
+ "output": {
+  "un_number": {
+   "value": "UN1268",
+   "quote": "IMDG Shipping Description: UN1268, Petroleum Distillates, n.o.s. 3, PG III"
+  },
+  "flash_point_c": {
+   "value": 49.0,
+   "quote": "Flash Point: 122F (49\u00b0C) Tag Opcn"
+  },
+  "revision_date": {
+   "value": "2021-08-02",
+   "quote": "Revision Datc: August 2, 202l Supersedes: April 29, 2O20"
+  }
+ }
+}

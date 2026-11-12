@@ -1,0 +1,13 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 1809,
+ "output_tokens": 40,
+ "cost_usd": 0.008036,
+ "latency_s": 1.9362885419977829,
+ "output": {
+  "manufacturer": {
+   "value": "Henkel Corporation",
+   "quote": "Hemkel Corporation"
+  }
+ }
+}

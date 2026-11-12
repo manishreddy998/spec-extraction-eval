@@ -1,0 +1,44 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 4059,
+ "output_tokens": 305,
+ "cost_usd": 0.022336,
+ "latency_s": 4.326584499998717,
+ "output": {
+  "cas_numbers": {
+   "value": [
+    "95-63-6",
+    "64742-81-0",
+    "68551-12-2",
+    "112-80-1",
+    "620-14-4",
+    "68439-46-3",
+    "108-67-8",
+    "622-96-8",
+    "526-73-8",
+    "103-65-1",
+    "611-14-3",
+    "1330-20-7",
+    "98-82-8",
+    "100-41-4"
+   ],
+   "quote": "1,2,4-trimethylbemzene 95-63-6 >= 10 - < 20 \nKerosine (petroleum), hydrodesulfurized 64742-81-O >= 10 - < 20"
+  },
+  "hazard_statements": {
+   "value": [
+    "H226",
+    "H304",
+    "H315",
+    "H318",
+    "H335",
+    "H336",
+    "H351"
+   ],
+   "quote": "Hazard statements : H226 Flammablc liquid and vapour. \nH3O4 May be fatal if swallowed and enters airways."
+  },
+  "revision_date": {
+   "value": "2023-10-01",
+   "quote": "Revision Date 10/O1/2023"
+  }
+ }
+}

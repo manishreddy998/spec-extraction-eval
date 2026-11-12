@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 10504,
+ "output_tokens": 154,
+ "cost_usd": 0.045096,
+ "latency_s": 2.3506753749970812,
+ "output": {
+  "cas_numbers": {
+   "value": [
+    "64742-49-0",
+    "142-82-5",
+    "64742-53-6",
+    "64742-56-9",
+    "64742-65-0"
+   ],
+   "quote": "Heptane 64742-49-0 \nl42-82-5 \n30-50%* Aspiration Toxicity Category 1"
+  },
+  "un_number": {
+   "value": "UN1206",
+   "quote": "IMDG Shipping Description: UN1206, Heptanes, 3, II LTD QTY"
+  }
+ }
+}

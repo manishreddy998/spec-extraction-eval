@@ -1,0 +1,21 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 12546,
+ "output_tokens": 106,
+ "cost_usd": 0.052303999999999996,
+ "latency_s": 3.1784770829981426,
+ "output": {
+  "cas_numbers": {
+   "value": [
+    "64742-49-0",
+    "142-82-5",
+    "74-98-6"
+   ],
+   "quote": "Heptane 64742-49-0 \n142-82-5"
+  },
+  "flash_point_c": {
+   "value": -34.0,
+   "quote": "Flash Point: <-29.2\u00b0F Tag Closed"
+  }
+ }
+}

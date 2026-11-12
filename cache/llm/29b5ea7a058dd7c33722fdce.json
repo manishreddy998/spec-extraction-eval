@@ -1,0 +1,21 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2174,
+ "output_tokens": 156,
+ "cost_usd": 0.0002954,
+ "latency_s": 1.8491462500023772,
+ "output": {
+  "product_name": {
+   "value": "WD-40 Specialist\u00ae Dry Lube",
+   "quote": "Trade Name: WD-40 Specialist\u00ae Dry Lube"
+  },
+  "manufacturer": {
+   "value": "WD-40 Products [Canada] Ltd.",
+   "quote": "WD-40 Products [Canada] Ltd."
+  },
+  "revision_date": {
+   "value": "2024-09-04",
+   "quote": "SDS Date of Preparation: Scptember 4, 2024"
+  }
+ }
+}

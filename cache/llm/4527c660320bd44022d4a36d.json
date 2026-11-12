@@ -1,0 +1,29 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3357,
+ "output_tokens": 281,
+ "cost_usd": 0.00047620000000000003,
+ "latency_s": 3.3678500000023632,
+ "output": {
+  "product_name": {
+   "value": "WD-40 Multi-Use Product Aerosol",
+   "quote": "Trade Name: WD-40 Multi-Use Product Aerosol"
+  },
+  "manufacturer": {
+   "value": "WD-40 Products [Canada] Ltd.",
+   "quote": "Canadian Office: WD-40 Products [Canada] Ltd. P.O. Box 220 Toronto, Ontario M9C 4V3"
+  },
+  "flash_point_c": {
+   "value": 59.0,
+   "quote": "Flash Point: 13BF (59\u00b0C) Tag Closed"
+  },
+  "ph": {
+   "value": null,
+   "quote": "pH: Not Applicablc Relative Density: 0.8 - 0.82 @ 60F"
+  },
+  "revision_date": {
+   "value": "2023-10-09",
+   "quote": "SDS Date of Preparation: October 9, 2023"
+  }
+ }
+}

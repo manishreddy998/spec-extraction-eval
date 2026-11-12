@@ -1,0 +1,33 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 7381,
+ "output_tokens": 295,
+ "cost_usd": 0.0008856000000000001,
+ "latency_s": 5.361258750002889,
+ "output": {
+  "product_name": {
+   "value": "WD-40 Bulk",
+   "quote": "Trade Name: WD-40 Bulk"
+  },
+  "manufacturer": {
+   "value": "WD-40 Products [Canada] Ltd.",
+   "quote": "WD-40 Products [Canada] Ltd."
+  },
+  "hazard_statements": {
+   "value": [],
+   "quote": "Flammable Liquid Catcgory 3 Aspiration Toxicity Category 1 Specific Targct Organ Toxicity Single Exposure Category 3 (nervous system effects)"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearance: Light green to amber liquid"
+  },
+  "ph": {
+   "value": null,
+   "quote": "pE: Not Applicable"
+  },
+  "revision_date": {
+   "value": "2021-08-02",
+   "quote": "Revision Datc: August 2, 202l Supersedes: April 29, 2O20"
+  }
+ }
+}

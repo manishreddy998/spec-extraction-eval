@@ -1,0 +1,31 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 2623,
+ "output_tokens": 183,
+ "cost_usd": 0.014152,
+ "latency_s": 3.5787635000015143,
+ "output": {
+  "cas_numbers": {
+   "value": [
+    "67-64-1",
+    "74-98-6",
+    "64742-49-0",
+    "106-97-8",
+    "1330-20-7",
+    "13463-67-7",
+    "141-78-6",
+    "123-86-4",
+    "5131-66-8",
+    "100-41-4",
+    "7631-86-9",
+    "22464-99-9",
+    "96-29-7"
+   ],
+   "quote": "Amorphous Silica B631-B6-9 O.1-1.O Not Available Not Available"
+  },
+  "un_number": {
+   "value": "UN1950",
+   "quote": "UN Numbcr: N.A. 19S0 1950 1950"
+  }
+ }
+}

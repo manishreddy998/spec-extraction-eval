@@ -1,0 +1,19 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 6379,
+ "output_tokens": 87,
+ "cost_usd": 0.027256,
+ "latency_s": 2.008175916002074,
+ "output": {
+  "cas_numbers": {
+   "value": [
+    "64742-49-0",
+    "142-82-5",
+    "64742-53-6",
+    "64742-56-9",
+    "64742-65-0"
+   ],
+   "quote": "Heptane 64742-49-0 \nl42-82-5 \n30-50%*"
+  }
+ }
+}

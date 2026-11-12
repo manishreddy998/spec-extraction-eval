@@ -1,0 +1,18 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 1724,
+ "output_tokens": 142,
+ "cost_usd": 0.009736,
+ "latency_s": 1.81200704100047,
+ "output": {
+  "cas_numbers": {
+   "value": [
+    "68439-46-3",
+    "111-76-2",
+    "1310-73-2",
+    "68081-81-2"
+   ],
+   "quote": "Alcohols, C9-11, ethoxylated 68439-46-3 >= 3 - < 5 \n2-butoxyethanol 111-76-2 >= 1 - < 3 \nsodium hydroxide 1310-73-2 >= 1 - < 3"
+  }
+ }
+}

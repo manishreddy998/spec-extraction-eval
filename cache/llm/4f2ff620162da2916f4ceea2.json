@@ -1,0 +1,29 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3207,
+ "output_tokens": 224,
+ "cost_usd": 0.00043270000000000006,
+ "latency_s": 4.178720292002254,
+ "output": {
+  "product_name": {
+   "value": "ZEP I.D. RED INDUSTRIAL DEGREASER 1GL 4CT",
+   "quote": "ZEP I.D. RED INDUSTRIAL DEGREASER 1GL 4CT"
+  },
+  "manufacturer": {
+   "value": "Zep Imc.",
+   "quote": "Company : Zep Imc."
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearamce : liquid"
+  },
+  "ph": {
+   "value": null,
+   "quote": ""
+  },
+  "revision_date": {
+   "value": "2023-01-10",
+   "quote": "Version 5.3 Revision Date 10/01/2O23 Print Date 04/10/2025"
+  }
+ }
+}

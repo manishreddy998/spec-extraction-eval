@@ -1,0 +1,17 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 1760,
+ "output_tokens": 124,
+ "cost_usd": 0.00023799999999999998,
+ "latency_s": 0.8762055830011377,
+ "output": {
+  "product_name": {
+   "value": "Rust-Oleum Chalked Ultra Matte Paint",
+   "quote": "Name on Label: Rust-Oleum Chalked Ultra Matte Paint"
+  },
+  "manufacturer": {
+   "value": "Rust-Oleum Corporation",
+   "quote": "Manufacturer: Rust-Oleum Corporation"
+  }
+ }
+}

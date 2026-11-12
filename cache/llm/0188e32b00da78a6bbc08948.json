@@ -1,0 +1,27 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 16121,
+ "output_tokens": 382,
+ "cost_usd": 0.0018031000000000002,
+ "latency_s": 1.8689377499977127,
+ "output": {
+  "product_name": "LOCTITE 242",
+  "manufacturer": "Henkel Ltd",
+  "cas_numbers": [
+   "80-15-9",
+   "613-48-9",
+   "13463-67-7",
+   "130-15-4"
+  ],
+  "signal_word": "Warning",
+  "hazard_statements": [
+   "H319",
+   "H335"
+  ],
+  "un_number": null,
+  "flash_point_c": 100.0,
+  "physical_state": "liquid",
+  "ph": 3.0,
+  "revision_date": "2021-10-01"
+ }
+}

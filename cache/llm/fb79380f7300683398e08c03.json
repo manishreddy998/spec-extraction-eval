@@ -1,0 +1,20 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 2487,
+ "output_tokens": 124,
+ "cost_usd": 0.012428,
+ "latency_s": 2.1686790420062607,
+ "output": {
+  "cas_numbers": {
+   "value": [
+    "64-17-5",
+    "67-63-0"
+   ],
+   "quote": "Ethyl Alcohol 64-l7-5 >= 60 - < 70 \nIsopropyl Alcohol 67-63-0 >= 1 - < 5"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appcarance : liquid"
+  }
+ }
+}

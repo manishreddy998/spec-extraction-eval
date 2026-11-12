@@ -1,0 +1,33 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 5195,
+ "output_tokens": 254,
+ "cost_usd": 0.0006464999999999999,
+ "latency_s": 4.214221791997261,
+ "output": {
+  "product_name": {
+   "value": "WD-40 Bulk",
+   "quote": "Trade Name: WD-40 Bulk"
+  },
+  "manufacturer": {
+   "value": "WD-40 Products [Canada] Ltd.",
+   "quote": "WD-40 Products [Canada] Ltd. "
+  },
+  "flash_point_c": {
+   "value": 49.0,
+   "quote": "Flash Point: 122F (49\u00b0C) Tag Open"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearance: Light grecn to amber \nliquid"
+  },
+  "ph": {
+   "value": null,
+   "quote": "pH: Not Applicable"
+  },
+  "revision_date": {
+   "value": "2021-08-02",
+   "quote": "Revision Date: August 2, 2021 Supersedes: April 29, 2020"
+  }
+ }
+}

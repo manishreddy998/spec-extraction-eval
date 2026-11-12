@@ -1,0 +1,20 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 1882,
+ "output_tokens": 237,
+ "cost_usd": 0.012268000000000001,
+ "latency_s": 3.3859369159981725,
+ "output": {
+  "cas_numbers": {
+   "value": [
+    "7732-18-5",
+    "51981-21-6",
+    "144-55-8",
+    "104-46-1",
+    "26172-55-4",
+    "2682-20-4"
+   ],
+   "quote": "Tetrasodium Glutamate Diacctate 519B1-2l-6 < 2.000%*"
+  }
+ }
+}

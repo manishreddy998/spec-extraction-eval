@@ -1,0 +1,28 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 14354,
+ "output_tokens": 822,
+ "cost_usd": 0.0018464000000000002,
+ "latency_s": 4.171074458005023,
+ "output": {
+  "product_name": {
+   "value": "Brakleen\u00ae Brake Parts Cleaner - 1 lb 4 oz",
+   "quote": "Product identifier Brakleen\u00ae Brakc Parts Cleaner - 1 lb 4 oz"
+  },
+  "manufacturer": {
+   "value": "CRC Industries, Inc.",
+   "quote": "Company name CRC Industries, Inc."
+  },
+  "cas_numbers": {
+   "value": [
+    "67-64-1",
+    "79-20-9",
+    "124-38-9",
+    "64742-49-0",
+    "426260-76-6",
+    "142-82-5"
+   ],
+   "quote": "acetone 6B-64-1 40 - 50 methyl acetate 79-20-9 30 - 40"
+  }
+ }
+}

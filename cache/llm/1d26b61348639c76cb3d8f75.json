@@ -1,0 +1,44 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 15610,
+ "output_tokens": 401,
+ "cost_usd": 0.0017615,
+ "latency_s": 6.954768209005124,
+ "output": {
+  "product_name": {
+   "value": "Brakleen\u00ae Brake Parts Cleaner - 1 lb 4 oz",
+   "quote": "Product identifier Brakleen\u00ae Brakc Parts Cleaner - 1 lb 4 oz"
+  },
+  "manufacturer": {
+   "value": "CRC Industries, Inc.",
+   "quote": "Company name CRC Industries, Inc."
+  },
+  "cas_numbers": {
+   "value": [
+    "67-64-1",
+    "79-20-9",
+    "124-38-9",
+    "64742-49-0",
+    "426260-76-6",
+    "142-82-5"
+   ],
+   "quote": "acetone 6B-64-1 40 - 50 methyl acetate 79-20-9 30 - 40 carbon dioxide 124-38-9 5 - 10"
+  },
+  "un_number": {
+   "value": "UN1950",
+   "quote": "UN number UN1950 UN proper shippimg name Aerosols, flammable, Limited Quantity"
+  },
+  "flash_point_c": {
+   "value": -17.0,
+   "quote": "Flash point 1.4 \u00b0F (-17.0 \u00b0C) estimated"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Physical state Liquid. Form Aerosol."
+  },
+  "ph": {
+   "value": null,
+   "quote": "pH Not available."
+  }
+ }
+}

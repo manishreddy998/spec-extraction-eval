@@ -14,11 +14,11 @@ Model: `claude-opus-5-5` (effort `low`), 25 documents.
 | revision_date | 100% | 88% | 100% |
 | **All fields** | **100.0%** | **98.8%** | **100.0%** |
 | Silent errors (wrong and not flagged) | **0** | **3** | **0** |
-| Values flagged for review | 0 | 0 | 5 |
+| Values flagged for review | 0 | 0 | 6 |
 | CAS set F1 (mean) | 1.000 | 1.000 | 1.000 |
-| LLM calls | 25 | 25 | 28 |
-| Input tokens | 334,632 | 334,632 | 74,035 |
-| Output tokens | 4,897 | 13,759 | 6,154 |
-| Total cost (USD) | $1.436 | $0.040 | $0.051 |
-| Cost per document | $0.0575 | $0.0016 | $0.0020 |
+| LLM calls | 25 | 25 | 29 |
+| Input tokens | 334,632 | 334,632 | 75,893 |
+| Output tokens | 4,897 | 13,759 | 6,203 |
+| Total cost (USD) | $1.436 | $0.040 | $0.059 |
+| Cost per document | $0.0575 | $0.0016 | $0.0024 |
 | Median latency per document | 0.0s | 0.0s | 0.0s |

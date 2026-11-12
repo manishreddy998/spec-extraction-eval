@@ -1,0 +1,45 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 5347,
+ "output_tokens": 952,
+ "cost_usd": 0.0010107,
+ "latency_s": 8.752385125000728,
+ "output": {
+  "product_name": {
+   "value": "LOCTITE 242",
+   "quote": "LOCTITE 242"
+  },
+  "manufacturer": {
+   "value": "Henkel Ltd",
+   "quote": "Hemkel Ltd"
+  },
+  "cas_numbers": {
+   "value": [
+    "80-15-9",
+    "613-48-9",
+    "13463-67-7",
+    "130-15-4"
+   ],
+   "quote": "Cumene hydropcroxide 80-15-9 201-254-7"
+  },
+  "signal_word": {
+   "value": "Warning",
+   "quote": "Sigmal word: Warning"
+  },
+  "hazard_statements": {
+   "value": [
+    "H319",
+    "H335"
+   ],
+   "quote": "Hazard statement: E319 Causes serious cye irritation. H335 May cause respiratory irritation."
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearance liquid"
+  },
+  "ph": {
+   "value": 3.0,
+   "quote": "3 - 6"
+  }
+ }
+}

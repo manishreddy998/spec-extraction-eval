@@ -1,0 +1,32 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 4001,
+ "output_tokens": 240,
+ "cost_usd": 0.0005201,
+ "latency_s": 3.142427291997592,
+ "output": {
+  "product_name": {
+   "value": "ZEP PROFESSIONAL FAST EVAPORATING SOLVENT DEGREASER",
+   "quote": "Material name : ZEP PROFESSIONAL FAST EVAPORATING SOLVENT DEGREASER"
+  },
+  "manufacturer": {
+   "value": "Zep Inc.",
+   "quote": "Company : Zep Inc."
+  },
+  "hazard_statements": {
+   "value": [
+    "H222",
+    "H280",
+    "H304",
+    "H315",
+    "H336",
+    "H380"
+   ],
+   "quote": "H222 Extremely flammable aerosol. H280 Contains gas under pressure; may explode if heated."
+  },
+  "physical_state": {
+   "value": null,
+   "quote": "Appearance : Aerosol containing a compressed gas"
+  }
+ }
+}

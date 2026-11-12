@@ -1,0 +1,32 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 2436,
+ "output_tokens": 225,
+ "cost_usd": 0.014244,
+ "latency_s": 3.2978260409945506,
+ "output": {
+  "cas_numbers": {
+   "value": [
+    "95-63-6",
+    "64742-81-0",
+    "68551-12-2",
+    "112-80-1",
+    "620-14-4",
+    "68439-46-3",
+    "108-67-8",
+    "622-96-8",
+    "526-73-8",
+    "103-65-1",
+    "611-14-3",
+    "1330-20-7",
+    "98-82-8",
+    "100-41-4"
+   ],
+   "quote": "1,2,4-trimethylbemzene 95-63-6 >= 10 - < 20 \nKerosine (petroleum), hydrodesulfurized 64742-81-O >= 10 - < 20"
+  },
+  "revision_date": {
+   "value": "2023-10-01",
+   "quote": "Version 4.1 Revision Date 10/0l/2023"
+  }
+ }
+}

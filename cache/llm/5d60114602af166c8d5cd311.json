@@ -1,0 +1,34 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3638,
+ "output_tokens": 968,
+ "cost_usd": 0.0008478,
+ "latency_s": 4.478906125004869,
+ "output": {
+  "product_name": {
+   "value": "WD-40 Specialist\u00ae Electric Contact Cleaner",
+   "quote": "Product Name: WD-40 Specialist\u00ae Electric Contact Cleaner"
+  },
+  "manufacturer": {
+   "value": "WD-40 Products [Canada] Ltd.",
+   "quote": "Canadian Office: WD-40 Products [Canada] Ltd."
+  },
+  "cas_numbers": {
+   "value": [
+    "64742-49-0",
+    "142-82-5",
+    "67-63-0",
+    "B5-37-6"
+   ],
+   "quote": "Heptane 64742-49-0 142-82-5; Isopropyl Alcohol 67-63-0; 1,1 Difluoroethane B5-37-6"
+  },
+  "un_number": {
+   "value": "UN1950",
+   "quote": "DOT Surfacc Shipping Description: UN1950, Aerosols, 2.1 Ltd. Qty"
+  },
+  "revision_date": {
+   "value": "2024-12-23",
+   "quote": "SDS Date Of Preparation: Deccmber 23, 2024"
+  }
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3836,
+ "output_tokens": 937,
+ "cost_usd": 0.0008521,
+ "latency_s": 7.159182167000836,
+ "output": {
+  "product_name": {
+   "value": "LOCTITE\u00ae 242\u00ae THREADLOCKER MEDIUM STRENGTH PART NO. 24241",
+   "quote": "Product name: LOCTITE\u00ae 242\u00ae THREADLOCKER"
+  },
+  "manufacturer": {
+   "value": "Henkel Corporation",
+   "quote": "Hemkel Corporation"
+  },
+  "signal_word": {
+   "value": "Warning",
+   "quote": "WARNING: H315+H320 - CAUSES SKIN AND EYE IRRITATION."
+  },
+  "hazard_statements": {
+   "value": [
+    "H315",
+    "H320"
+   ],
+   "quote": "WARNING: H315+H320 - CAUSES SKIN AND EYE IRRITATION."
+  },
+  "revision_date": {
+   "value": "2025-02-12",
+   "quote": "Revision Number: 012.0 Issuc date: 02/12/2025"
+  }
+ }
+}

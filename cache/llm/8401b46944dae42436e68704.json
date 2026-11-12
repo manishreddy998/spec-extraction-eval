@@ -1,0 +1,24 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 3405,
+ "output_tokens": 123,
+ "cost_usd": 0.01608,
+ "latency_s": 3.407007292000344,
+ "output": {
+  "hazard_statements": {
+   "value": [
+    "H222",
+    "H280",
+    "H304",
+    "H315",
+    "H336",
+    "H370"
+   ],
+   "quote": "Hazard statements : H222 Extremely flammable aerosol. \nH280 Contains gas under pressure; may explode if heated."
+  },
+  "physical_state": {
+   "value": null,
+   "quote": "Appearance : Aerosol containing a compressed gas"
+  }
+ }
+}

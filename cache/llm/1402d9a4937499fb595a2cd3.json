@@ -1,0 +1,47 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 16269,
+ "output_tokens": 1196,
+ "cost_usd": 0.0022249,
+ "latency_s": 14.559215291999863,
+ "output": {
+  "product_name": {
+   "value": "WD-40 Bike Dry Chain Lubricant",
+   "quote": "Trade Name: WD-40 Bike Dry Chain Lubricant"
+  },
+  "manufacturer": {
+   "value": "WD-40 Products [Canada] Ltd.",
+   "quote": "Canadian Office: WD-40 Products [Canada] Ltd."
+  },
+  "cas_numbers": {
+   "value": [
+    "64742-49-0",
+    "142-82-5",
+    "64742-53-6",
+    "64742-56-9",
+    "64742-65-0"
+   ],
+   "quote": "Heptane 64742-49-0 142-82-5 30-50%* ... Petroleum Base Oil 64742-53-6 64742-S6-9 64742-65-0"
+  },
+  "un_number": {
+   "value": "UN1206",
+   "quote": "DOT Surface Shipping Description: UN1206, Heptanes, 3, II LTD QTY"
+  },
+  "flash_point_c": {
+   "value": -9.0,
+   "quote": "Flash Point: 15-l9\u00b0F (-9 - -7\u00b0C)"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Physical State: Liquid Particle Characteristics: Not applicable"
+  },
+  "ph": {
+   "value": null,
+   "quote": "pH: Not Applicable Relative Density: 0.78 - 0.8"
+  },
+  "revision_date": {
+   "value": "2024-09-04",
+   "quote": "Revision Date: September 4, 2024 Supersedes: June 1, 2O23"
+  }
+ }
+}

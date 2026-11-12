@@ -1,0 +1,25 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 15927,
+ "output_tokens": 258,
+ "cost_usd": 0.0017217,
+ "latency_s": 2.5667391669994686,
+ "output": {
+  "product_name": {
+   "value": "3-IN-ONE\u00ae Rvcare Window & Track Dry Lube",
+   "quote": "Trade Name: 3-IN-ONE\u00ae Rvcare Window & Track Dry Lube"
+  },
+  "manufacturer": {
+   "value": "WD-40 Products [Canada] Ltd.",
+   "quote": "Canadian Office: WD-40 Products [Canada] Ltd."
+  },
+  "hazard_statements": {
+   "value": [],
+   "quote": "May be fatal if swallowed and enters airways. Causes skin irritation. May cause drowsiness or dizzimess."
+  },
+  "revision_date": {
+   "value": "2024-09-04",
+   "quote": "Revision Date: Septembcr 4, 2024 Supersedes: December 23, 2023"
+  }
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2957,
+ "output_tokens": 844,
+ "cost_usd": 0.0007176999999999999,
+ "latency_s": 4.203217332993518,
+ "output": {
+  "product_name": {
+   "value": "3-IN-ONE\u00ae Rvcare Window & Track Dry Lube",
+   "quote": "Trade Name: 3-IN-ONE\u00ae Rvcare Window & Track"
+  },
+  "manufacturer": {
+   "value": "WD-40 Products [Canada] Ltd.",
+   "quote": "WD-40 Products [Canada] Ltd."
+  },
+  "un_number": {
+   "value": "UN1950",
+   "quote": "DOT Surface Shipping Description: UN1950, Aerosols, 2.1 Ltd. Qty"
+  },
+  "revision_date": {
+   "value": "2024-09-04",
+   "quote": "SDS Date Of Preparation: September 4, 2024"
+  }
+ }
+}

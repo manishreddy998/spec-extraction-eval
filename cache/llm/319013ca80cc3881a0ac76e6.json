@@ -1,0 +1,29 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3272,
+ "output_tokens": 179,
+ "cost_usd": 0.00041670000000000005,
+ "latency_s": 4.1432067079949775,
+ "output": {
+  "product_name": {
+   "value": "LOCTITE 242",
+   "quote": "LOCTITE 242"
+  },
+  "manufacturer": {
+   "value": "Henkel Ltd",
+   "quote": "Henkel Ltd"
+  },
+  "flash_point_c": {
+   "value": 100.0,
+   "quote": "Flash poimt > 100 \u00b0C (> 212 \u00b0F)"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearance liquid"
+  },
+  "ph": {
+   "value": 3.0,
+   "quote": "pH (; Conc.: 100 % product) 3 - 6"
+  }
+ }
+}

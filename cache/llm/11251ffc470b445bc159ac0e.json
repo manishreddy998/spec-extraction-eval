@@ -1,0 +1,22 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 2537,
+ "output_tokens": 104,
+ "cost_usd": 0.012228000000000001,
+ "latency_s": 2.8479787090036552,
+ "output": {
+  "manufacturer": {
+   "value": "Henkel Ltd",
+   "quote": "Hemkel Ltd"
+  },
+  "cas_numbers": {
+   "value": [
+    "80-15-9",
+    "613-48-9",
+    "13463-67-7",
+    "130-15-4"
+   ],
+   "quote": "Cumene hydropcroxide \n80-15-9"
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 13046,
+ "output_tokens": 270,
+ "cost_usd": 0.0014396,
+ "latency_s": 2.125391292000131,
+ "output": {
+  "product_name": {
+   "value": "ZEP I.D. RED INDUSTRIAL DEGREASER 1GL 4CT",
+   "quote": "ZEP I.D. RED INDUSTRIAL DEGREASER 1GL 4CT"
+  },
+  "manufacturer": {
+   "value": "Zep Inc.",
+   "quote": "Company : Zep Inc."
+  },
+  "un_number": {
+   "value": "UN1993",
+   "quote": "UNl993, Flammable liquids, n.o.s., (HEPTANE, ISOPROPANOL), 3, II"
+  },
+  "flash_point_c": {
+   "value": -18.0,
+   "quote": "Flash point : -18 \u00b0C"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearance : liquid"
+  },
+  "ph": {
+   "value": null,
+   "quote": "pH : Not applicable"
+  }
+ }
+}

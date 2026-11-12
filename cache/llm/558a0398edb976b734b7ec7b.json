@@ -1,0 +1,41 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 16427,
+ "output_tokens": 450,
+ "cost_usd": 0.0018677,
+ "latency_s": 6.742424750002101,
+ "output": {
+  "product_name": {
+   "value": "WD-40 Multi-Use Product Aerosol",
+   "quote": "Trade Name: WD-40 Multi-Use Product Aerosol"
+  },
+  "manufacturer": {
+   "value": "WD-40 Products [Canada] Ltd.",
+   "quote": "Canadian Office: WD-40 Products [Canada] Ltd."
+  },
+  "cas_numbers": {
+   "value": [
+    "64742-47-8",
+    "64742-47-8",
+    "124-38-9"
+   ],
+   "quote": "LVP Aliphatic Hydrocarbon 64742-47-8 4S-50% Aspiration Toxicity Category 1"
+  },
+  "hazard_statements": {
+   "value": [],
+   "quote": "Flammable Aerosol Category 1 Aspiration Toxicity Category 1 Specific Target Organ Toxicity Single Exposure Category 3 (nervovs system effects)"
+  },
+  "un_number": {
+   "value": "UN1950",
+   "quote": "DOT Surfacc Shippimg Description: UN1950, Aerosols, 2.1 Ltd. Qty"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Physical Statc: Liquid Particle Characteristics: Not applicablc"
+  },
+  "revision_date": {
+   "value": "2023-10-09",
+   "quote": "Revision Datc: October 9, 2023 Superscdes: June 26, 2023"
+  }
+ }
+}
