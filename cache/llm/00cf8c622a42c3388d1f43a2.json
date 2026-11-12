@@ -1,0 +1,21 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2507,
+ "output_tokens": 142,
+ "cost_usd": 0.0003217,
+ "latency_s": 1.585762499998964,
+ "output": {
+  "product_name": {
+   "value": "ZEP ZEPTEEN SOLVENT DEGREASER",
+   "quote": "Material name : ZEP ZEPTEEN SOLVENT DEGREASER"
+  },
+  "manufacturer": {
+   "value": "Zep Inc.",
+   "quote": "Company : Zep Inc."
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearance : liquid"
+  }
+ }
+}

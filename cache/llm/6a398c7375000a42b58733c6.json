@@ -1,0 +1,25 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2714,
+ "output_tokens": 202,
+ "cost_usd": 0.00037240000000000005,
+ "latency_s": 1.9509972919986467,
+ "output": {
+  "product_name": {
+   "value": "Painter's Touch Ultra Cover 2X Spray",
+   "quote": "Name on Label: Painter's Touch Ultra Cover 2X Spray"
+  },
+  "manufacturer": {
+   "value": "Rust-Oleum Canada (ROCA)",
+   "quote": "Manufacturer: Rust-Oleum Canada (ROCA)"
+  },
+  "physical_state": {
+   "value": null,
+   "quote": "Liquid Decomposition Temperature, \u00b0CPhysical State N.D."
+  },
+  "ph": {
+   "value": null,
+   "quote": "pHColor Not Yet Specified N.A."
+  }
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 12321,
+ "output_tokens": 187,
+ "cost_usd": 0.0013256000000000001,
+ "latency_s": 1.1414250419984455,
+ "output": {
+  "product_name": "ZEP PROFESSIONAL FAST EVAPORATING SOLVENT DEGREASER",
+  "manufacturer": "Zep Inc.",
+  "cas_numbers": [
+   "64742-49-0",
+   "64-17-5",
+   "124-38-9",
+   "67-56-1",
+   "142-82-5"
+  ],
+  "signal_word": "Danger",
+  "hazard_statements": [
+   "H222",
+   "H280",
+   "H304",
+   "H315",
+   "H336",
+   "H370"
+  ],
+  "un_number": "UN1950",
+  "flash_point_c": null,
+  "physical_state": null,
+  "ph": null,
+  "revision_date": "2020-06-22"
+ }
+}

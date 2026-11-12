@@ -1,0 +1,17 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 1780,
+ "output_tokens": 141,
+ "cost_usd": 0.0002485,
+ "latency_s": 1.6495366249946528,
+ "output": {
+  "product_name": {
+   "value": "UNVRSL SSPR 6PK GLS GREEN CITRUS",
+   "quote": "Product Name: UNVRSL SSPR 6PK GLS GREEN CITRUS Revision Date: 4/10/2019"
+  },
+  "manufacturer": {
+   "value": "Rust-Oleum Corporation",
+   "quote": "Manufacturer: Rust-Oleum Corporation"
+  }
+ }
+}

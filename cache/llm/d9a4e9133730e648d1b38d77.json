@@ -1,0 +1,40 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 9783,
+ "output_tokens": 668,
+ "cost_usd": 0.0013123000000000002,
+ "latency_s": 2.9744035419935244,
+ "output": {
+  "product_name": "UNVRSL SSPR 6PK GLS GREEN CITRUS",
+  "manufacturer": "Rust-Oleum Corporation",
+  "cas_numbers": [
+   "67-64-1",
+   "74-98-6",
+   "616-38-6",
+   "106-97-8",
+   "64742-49-0",
+   "141-78-6",
+   "123-86-4",
+   "1330-20-7",
+   "64742-47-8",
+   "763-69-9",
+   "13463-67-7",
+   "100-41-4",
+   "41556-26-7",
+   "111-76-2"
+  ],
+  "signal_word": "Danger",
+  "hazard_statements": [
+   "H351",
+   "H280",
+   "H319",
+   "H222",
+   "H336"
+  ],
+  "un_number": "UN1950",
+  "flash_point_c": -96.0,
+  "physical_state": "liquid",
+  "ph": null,
+  "revision_date": "2019-04-10"
+ }
+}

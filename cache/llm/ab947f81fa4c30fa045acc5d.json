@@ -1,0 +1,40 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 9701,
+ "output_tokens": 246,
+ "cost_usd": 0.043724,
+ "latency_s": 2.9707648330004304,
+ "output": {
+  "product_name": "PRO LSPR 6PK FLAT BRIGHT GALV COMPOUND",
+  "manufacturer": "Rust-Oleum Corporation",
+  "cas_numbers": [
+   "7440-66-6",
+   "123-86-4",
+   "64742-47-8",
+   "74-98-6",
+   "7429-90-5",
+   "106-97-8",
+   "1330-20-7",
+   "1314-13-2",
+   "64742-95-6",
+   "8052-41-3",
+   "100-41-4",
+   "7631-86-9",
+   "5153-24-2"
+  ],
+  "signal_word": "Danger",
+  "hazard_statements": [
+   "H302",
+   "H350",
+   "H222",
+   "H280",
+   "H340",
+   "H372"
+  ],
+  "un_number": "UN1950",
+  "flash_point_c": -96.0,
+  "physical_state": "liquid",
+  "ph": null,
+  "revision_date": "2023-08-09"
+ }
+}

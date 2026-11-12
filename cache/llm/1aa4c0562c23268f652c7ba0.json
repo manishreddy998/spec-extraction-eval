@@ -1,0 +1,21 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2388,
+ "output_tokens": 173,
+ "cost_usd": 0.0003253,
+ "latency_s": 2.383323499998369,
+ "output": {
+  "product_name": {
+   "value": "ZEP CONC DRIVEWAY & CONCRETE CLEANER & DEGREASER 1GL 4CT",
+   "quote": "Material name : ZEP CONC DRIVEWAY & CONCRETE CLEANER & DEGREASER 1GL 4CT"
+  },
+  "manufacturer": {
+   "value": "Zep Inc.",
+   "quote": "Company : Zep Inc."
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearance : liquid"
+  }
+ }
+}

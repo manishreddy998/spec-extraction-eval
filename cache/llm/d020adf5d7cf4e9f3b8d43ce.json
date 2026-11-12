@@ -1,0 +1,25 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3416,
+ "output_tokens": 569,
+ "cost_usd": 0.0006261,
+ "latency_s": 2.9333870000045863,
+ "output": {
+  "product_name": {
+   "value": "Simple Green\u00ae All-Purpose Cleaner",
+   "quote": "Product Name: Simple Green\u00ae All-Purpose Cleaner"
+  },
+  "manufacturer": {
+   "value": "Sunshine Makers, Inc.",
+   "quote": "Company: Sunshine Makers, Inc."
+  },
+  "flash_point_c": {
+   "value": 100.0,
+   "quote": "Flash Point: > 212oF SCAQMD 304-91 / EPA 24: Not tested"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearance: Green Liquid Partition Coefficient: n-octanol/water: Not determined"
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 1751,
+ "output_tokens": 102,
+ "cost_usd": 0.00022610000000000002,
+ "latency_s": 0.9953856250067474,
+ "output": {
+  "product_name": {
+   "value": "Stops Rust Hammered White",
+   "quote": "Name on Label: Stops Rust Hammered White"
+  },
+  "manufacturer": {
+   "value": "Rust-Oleum Corporation",
+   "quote": "Manufacturer: Rust-Oleum Corporation"
+  }
+ }
+}

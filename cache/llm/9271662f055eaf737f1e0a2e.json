@@ -1,0 +1,25 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2709,
+ "output_tokens": 180,
+ "cost_usd": 0.00036090000000000004,
+ "latency_s": 1.1870444170053815,
+ "output": {
+  "product_name": {
+   "value": "Tremclad Rust Paint",
+   "quote": "Name on Label: Tremclad Rust Paint"
+  },
+  "manufacturer": {
+   "value": "Rust-Oleum Canada (ROCA)",
+   "quote": "Manufacturer: Rust-Oleum Canada (ROCA)"
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Liquid Decomposition Temperature, \u00b0CPhysical State N.D."
+  },
+  "ph": {
+   "value": null,
+   "quote": "pHColor Red N.A."
+  }
+ }
+}

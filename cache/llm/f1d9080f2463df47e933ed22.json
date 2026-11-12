@@ -1,0 +1,21 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2556,
+ "output_tokens": 205,
+ "cost_usd": 0.00035810000000000003,
+ "latency_s": 2.1985138749951147,
+ "output": {
+  "product_name": {
+   "value": "ZEP ORANGE RESPONSE CITRUS INDUSTRIAL DEGREASER DEODORIZER ADHESIVE REMOVER_5GL",
+   "quote": "Material name : ZEP ORANGE RESPONSE CITRUS INDUSTRIAL DEGREASER DEODORIZER ADHESIVE REMOVER_5GL"
+  },
+  "manufacturer": {
+   "value": "Zep Inc.",
+   "quote": "Company : Zep Inc."
+  },
+  "physical_state": {
+   "value": "liquid",
+   "quote": "Appearance : liquid"
+  }
+ }
+}

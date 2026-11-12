@@ -1,0 +1,28 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 12236,
+ "output_tokens": 170,
+ "cost_usd": 0.052344,
+ "latency_s": 2.780839416998788,
+ "output": {
+  "product_name": "ZEP I.D. RED INDUSTRIAL DEGREASER 1GL 4CT",
+  "manufacturer": "Zep Inc.",
+  "cas_numbers": [
+   "64742-49-0",
+   "67-63-0",
+   "142-82-5"
+  ],
+  "signal_word": "Danger",
+  "hazard_statements": [
+   "H225",
+   "H304",
+   "H315",
+   "H336"
+  ],
+  "un_number": "UN1993",
+  "flash_point_c": -18.0,
+  "physical_state": "liquid",
+  "ph": null,
+  "revision_date": "2023-10-01"
+ }
+}

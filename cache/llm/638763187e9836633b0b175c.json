@@ -1,0 +1,21 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 6562,
+ "output_tokens": 131,
+ "cost_usd": 0.028868,
+ "latency_s": 1.9723345000020345,
+ "output": {
+  "product_name": "WD-40 Bulk",
+  "manufacturer": "WD-40 Products [Canada] Ltd.",
+  "cas_numbers": [
+   "64742-47-8"
+  ],
+  "signal_word": "Danger",
+  "hazard_statements": [],
+  "un_number": "UN1268",
+  "flash_point_c": 49.0,
+  "physical_state": "liquid",
+  "ph": null,
+  "revision_date": "2021-08-02"
+ }
+}

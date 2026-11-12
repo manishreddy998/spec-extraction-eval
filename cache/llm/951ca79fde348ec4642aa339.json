@@ -1,0 +1,23 @@
+{
+ "model": "claude-opus-5-5",
+ "input_tokens": 14855,
+ "output_tokens": 153,
+ "cost_usd": 0.06248,
+ "latency_s": 1.7368381249980303,
+ "output": {
+  "product_name": "WD-40 Multi-Use Product Aerosol",
+  "manufacturer": "WD-40 Products [Canada] Ltd.",
+  "cas_numbers": [
+   "64742-47-8",
+   "64742-47-8",
+   "124-38-9"
+  ],
+  "signal_word": "Danger",
+  "hazard_statements": [],
+  "un_number": "UN1950",
+  "flash_point_c": 59.0,
+  "physical_state": "liquid",
+  "ph": null,
+  "revision_date": "2023-10-09"
+ }
+}

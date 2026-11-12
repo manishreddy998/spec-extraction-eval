@@ -1,0 +1,26 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 7400,
+ "output_tokens": 586,
+ "cost_usd": 0.001033,
+ "latency_s": 3.0320209999990766,
+ "output": {
+  "product_name": "Simple Green\u00ae All-Purpose Cleaner",
+  "manufacturer": "Sunshine Makers, Inc.",
+  "cas_numbers": [
+   "7732-18-5",
+   "51981-21-6",
+   "144-55-8",
+   "104-46-1",
+   "26172-55-4",
+   "2682-20-4"
+  ],
+  "signal_word": "None",
+  "hazard_statements": [],
+  "un_number": null,
+  "flash_point_c": 100.0,
+  "physical_state": "liquid",
+  "ph": 8.0,
+  "revision_date": "2025-10-01"
+ }
+}

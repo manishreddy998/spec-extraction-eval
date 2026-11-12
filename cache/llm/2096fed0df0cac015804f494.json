@@ -1,0 +1,42 @@
+{
+ "model": "claude-haiku-5-5",
+ "input_tokens": 12817,
+ "output_tokens": 666,
+ "cost_usd": 0.0016147,
+ "latency_s": 2.9406536659953417,
+ "output": {
+  "product_name": "ZEP ZEPTEEN SOLVENT DEGREASER",
+  "manufacturer": "Zep Inc.",
+  "cas_numbers": [
+   "95-63-6",
+   "64742-81-0",
+   "68551-12-2",
+   "112-80-1",
+   "620-14-4",
+   "68439-46-3",
+   "108-67-8",
+   "622-96-8",
+   "526-73-8",
+   "103-65-1",
+   "611-14-3",
+   "1330-20-7",
+   "98-82-8",
+   "100-41-4"
+  ],
+  "signal_word": "Danger",
+  "hazard_statements": [
+   "H226",
+   "H304",
+   "H315",
+   "H318",
+   "H335",
+   "H336",
+   "H351"
+  ],
+  "un_number": "UN1993",
+  "flash_point_c": 45.0,
+  "physical_state": "liquid",
+  "ph": null,
+  "revision_date": "2023-10-01"
+ }
+}
