@@ -2,7 +2,7 @@
 
 The golden set (`data/golden.jsonl`) holds the correct answer for every field in every document.
 Labels come from reading the PDF itself, not the extracted text, because text extraction can corrupt
-characters (see `sds_08`, where the PDF's font maps "n" to "m" and "8" to "B").
+characters (see `sds_08`, where the PDF's font maps "n" to "m" and "7" to "B", so "67-64-1" comes out as "6B-64-1").
 
 Each record has `verified: false` until it has been checked line by line against the PDF.
 `python scripts/label_helper.py sds_10` prints the relevant passages for a document to speed this up.
