@@ -147,6 +147,9 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--method", choices=[*METHODS, "all"], default="all")
     ap.add_argument("--workers", type=int, default=4)
+    ap.add_argument("--gate", action="store_true",
+                    help="exit non-zero if the cascade drops below --min-accuracy or makes any silent error")
+    ap.add_argument("--min-accuracy", type=float, default=0.98)
     args = ap.parse_args()
     names = list(METHODS) if args.method == "all" else [args.method]
     golden = load_golden()
@@ -167,6 +170,13 @@ def main() -> None:
         misses = [(r["doc_id"], f) for r in rows for f in FIELDS if not r["scores"][f]]
         print(f"{n} misses ({len(misses)}):", ", ".join(f"{d}:{f}" for d, f in misses))
         print(f"{n} flagged:", ", ".join(f"{r['doc_id']}:{f}" for r in rows for f in r["review"]) or "none")
+    if args.gate and "C_cascade" in all_rows:
+        rows = all_rows["C_cascade"]
+        acc = sum(sum(r["scores"][f] for f in FIELDS) for r in rows) / (len(rows) * len(FIELDS))
+        silent = sum(len(r["silent_errors"]) for r in rows)
+        print(f"gate: accuracy {acc:.1%} (min {args.min_accuracy:.0%}), silent errors {silent} (max 0)")
+        if acc < args.min_accuracy or silent > 0:
+            sys.exit(2)
 
 
 if __name__ == "__main__":

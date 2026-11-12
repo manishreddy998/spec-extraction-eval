@@ -1,0 +1,32 @@
+name: eval
+
+# Every push and pull request runs the unit tests and the full extraction eval.
+# The eval replays recorded model responses (cache/llm), so it needs no API key and costs nothing.
+# A change to prompts, schemas, rules or checks that alters a request misses the cache and fails,
+# which is the point: re-record with a real run, review the new numbers, then commit.
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Unit tests
+        run: python -m pytest -q tests
+      - name: Fetch source documents
+        run: python scripts/download.py && python scripts/extract_text.py
+      - name: Eval (replayed responses, quality gate)
+        env:
+          SPECX_CACHE: replay
+        run: python scripts/run_eval.py --gate
+      - name: Publish summary
+        if: always()
+        run: cat results/summary.md >> "$GITHUB_STEP_SUMMARY" || true
