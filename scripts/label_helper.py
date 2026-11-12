@@ -8,6 +8,9 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 TEXT = ROOT / "data" / "text"
+sys.path.insert(0, str(ROOT / "src"))
+
+from specx.sections import section  # noqa: E402
 
 PATTERNS = {
     "identity": r"(product name|name on label|trade name|product identifier|manufacturer|supplier|company)",
@@ -35,22 +38,6 @@ def show(doc_id: str) -> None:
     print(f"-- H-codes in Section 2 ({len(sec2)} chars):", sorted(set(H_RE.findall(sec2))))
     print(f"-- CAS in Section 3 ({len(sec3)} chars):", list(dict.fromkeys(CAS_RE.findall(sec3))))
     print("-- CAS anywhere:", list(dict.fromkeys(CAS_RE.findall(text))))
-
-
-HEADINGS = {
-    2: r"hazards? identification|hazard\(s\) identification|identification des dangers",
-    3: r"composition|information on ingredients",
-    4: r"first[- ]aid",
-}
-
-
-def section(text: str, n: int) -> str:
-    """Slice out GHS section n using its heading; returns '' if the heading isn't found."""
-    start = re.search(rf"(?im)^\s*(section\s*)?{n}\s*[\.:)\-]?\s*({HEADINGS[n]})", text)
-    if not start:
-        return ""
-    end = re.search(rf"(?im)^\s*(section\s*)?{n + 1}\s*[\.:)\-]?\s*({HEADINGS[n + 1]})", text[start.end():])
-    return text[start.start(): start.end() + end.start()] if end else text[start.start(): start.start() + 8000]
 
 
 if __name__ == "__main__":
